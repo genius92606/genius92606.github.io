@@ -1,5 +1,6 @@
 ---
-layout: default
+title: Courses
+layout: course
 ---
 
 
@@ -11,7 +12,7 @@ layout: default
 
 ## Introduction to Rendering Methods, Programming and Applications
 ***
-- [Hw1-fundamental OpenGL](../_include/rendering-hw1)
+- [Hw1-fundamental OpenGL](./rendering-hw1)
 - lang: 設定瀏覽器顯示語言
 - dir: 設定文字方向
 - breaks: 設定是否使用分行

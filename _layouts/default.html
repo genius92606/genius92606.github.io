@@ -1,3 +1,5 @@
+
+{% include sidebar.html %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -11,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
+  <title>{{ page.title }} | {{ site.title }}</title>
   <body>
     <div class="wrapper">
       <header>

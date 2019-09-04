@@ -1,4 +1,4 @@
-I"�<h1 id="profile--projects---courses"><a href="./another-page.html">Profile</a>    <a href="./another-page.html">Projects</a>     <a href="./courses.html">Courses</a></h1>
+I"�<h1 id="profile--projects---courses"><a href="./another-page.html">Profile</a>    <a href="./another-page.html">Projects</a>     <a href="./courses">Courses</a></h1>
 
 <h2 id="practical-computer-graphics-skills-for-technical-artist">Practical Computer Graphics Skills for Technical Artist</h2>
 <hr />
@@ -6,7 +6,7 @@
 <h2 id="introduction-to-rendering-methods-programming-and-applications">Introduction to Rendering Methods, Programming and Applications</h2>
 <hr />
 <ul>
-  <li><a href="./rendering-hw1.html">Hw1-fundamental OpenGL</a></li>
+  <li><a href="./rendering-hw1">Hw1-fundamental OpenGL</a></li>
   <li>lang: 設定瀏覽器顯示語言</li>
   <li>dir: 設定文字方向</li>
   <li>breaks: 設定是否使用分行</li>
