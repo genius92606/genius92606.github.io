@@ -1,11 +1,11 @@
-
-
-
 ---
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+# [Profile](./another-page.html) &ensp;&ensp; [Projects](./another-page.html)  &ensp;&ensp; [Courses](./courses.html)
+
+Text can be **bold**, _italic_, or &ensp;~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
