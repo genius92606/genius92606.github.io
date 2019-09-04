@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-# [Profile](./another-page.html) &ensp;&ensp; [Projects](./another-page.html)  &ensp;&ensp; [Courses](./courses.html)
+# [Profile](./another-page.html) &ensp;&ensp; [Projects](./another-page.html)  &ensp;&ensp; [Courses](./courses)
 
 Text can be **bold**, _italic_, or &ensp;~~strikethrough~~.
 
