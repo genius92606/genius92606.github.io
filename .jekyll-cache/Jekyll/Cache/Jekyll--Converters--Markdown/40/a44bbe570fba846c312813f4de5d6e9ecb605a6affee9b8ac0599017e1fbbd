@@ -1,12 +1,12 @@
-I"†<h2 id="practical-computer-graphics-skills-for-technical-artist">Practical Computer Graphics Skills for Technical Artist</h2>
+I"›<h2 id="practical-computer-graphics-skills-for-technical-artist">Practical Computer Graphics Skills for Technical Artist</h2>
 <hr />
 
 <h2 id="introduction-to-rendering-methods-programming-and-applications">Introduction to Rendering Methods, Programming and Applications</h2>
 <hr />
 <ul>
-  <li><a href="./rendering/hw1">Hw1-fundamental OpenGL</a></li>
-  <li><a href="./rendering/hw2">Hw2-image morphing</a></li>
-  <li><a href="./rendering/hw3">Hw3-simple character</a></li>
+  <li><a href="/courses/rendering/hw1">Hw1-fundamental OpenGL</a></li>
+  <li><a href="/courses/rendering/hw2">Hw2-image morphing</a></li>
+  <li><a href="/courses/rendering/hw3">Hw3-simple character</a></li>
 </ul>
 
 <h2 id="web-programming">Web Programming</h2>

@@ -12,9 +12,9 @@ permalink: courses
 
 ## Introduction to Rendering Methods, Programming and Applications
 ***
-- [Hw1-fundamental OpenGL](./courses/rendering/hw1)
-- [Hw2-image morphing](./courses/rendering/hw2)
-- [Hw3-simple character](./courses/rendering/hw3)
+- [Hw1-fundamental OpenGL](/courses/rendering/hw1)
+- [Hw2-image morphing](/courses/rendering/hw2)
+- [Hw3-simple character](/courses/rendering/hw3)
 
 ## Web Programming
 ***
