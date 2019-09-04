@@ -2,12 +2,12 @@
 # main links
 main:
    - title: "Projects"
-     url: /projects/
+     url: /projects
    - title: "Courses"
-     url: /courses/
+     url: /courses
    - title: "Posts"
-     url: /posts/
+     url: /posts
    - title: "Collection"
-     url: /collection/
+     url: /collection
    - title: "About Me"
-     url: /about-me/
+     url: /about-me
