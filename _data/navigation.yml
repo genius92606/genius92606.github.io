@@ -1,0 +1,13 @@
+    
+# main links
+main:
+   - title: "Projects"
+     url: /projects/
+   - title: "Courses"
+     url: /courses/
+   - title: "Posts"
+     url: /posts/
+   - title: "Collection"
+     url: /collection/
+   - title: "About Me"
+     url: /about-me/

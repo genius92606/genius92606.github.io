@@ -1,6 +1,7 @@
 ---
 title : rendering-hw1
 layout: default
+permalink: courses/rendering/hw1
 ---
 
 繪圖技術設計與應用HW1-筆記

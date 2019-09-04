@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>
+    {% for item in site.data.navigation.main %}
+    
+    <a href="{{ item.url }}">
+       {{ item.title }}
+    </a>
+    &emsp;
+    {% endfor %}
+</h1>
+
+{{ content }}
