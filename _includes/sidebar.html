@@ -8,26 +8,17 @@
         {% if s.image contains "://" %}
           "{{ s.image }}"
         {% else %}
-          "{{ s.image | absolute_url }}"
+          "{{ s.image | relative_url }}"
         {% endif %}
         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
+      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
-    
-  <div class="author__urls-wrapper">
-      <!-- flag counter -->
-      <ul class="author__urls social-icons">
-          <li>
-              <a href="http://s11.flagcounter.com/more/KPc9"><img src="//s11.flagcounter.com/count2/KPc9/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-          </li>
-      </ul>
-  </div>
-    
   </div>
 {% endif %}
