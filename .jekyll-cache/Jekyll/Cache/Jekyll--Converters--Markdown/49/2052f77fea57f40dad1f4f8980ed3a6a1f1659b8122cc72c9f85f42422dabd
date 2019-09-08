@@ -1,4 +1,4 @@
-I"(<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"�*<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -415,6 +415,29 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="/ncku/alumni-library-card-application/" rel="permalink">校友借書證申請(Alumni library card application)
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">申請校友借書證一點都不難～～只是價格小貴了一點ＸＤ
+</p>
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="/blog/first-blog/" rel="permalink">Fisrt blog!!!
 </a>
       
@@ -428,7 +451,7 @@
   less than 1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">This post should display a header image, if the theme supports it.
+    <p class="archive__item-excerpt" itemprop="description">Fucking bullshit
 </p>
   </article>
 </div>

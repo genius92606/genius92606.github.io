@@ -1,5 +1,6 @@
 ---
 title: "Fisrt blog!!!"
+share: true
 header:
   image: /assets/images/unsplash-image-3.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
