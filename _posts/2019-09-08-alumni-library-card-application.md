@@ -4,6 +4,7 @@ share: true
 header:
   overlay_image: /assets/images/ncku-night.jpg
   caption: "Photo credit: [**NCKU Library**](http://www.lib.ncku.edu.tw)"
+  teaser: /assets/images/ncku-night.jpg
   actions:
     - label: "Click to see the whole image"
       url: "/assets/images/ncku-night.jpg"
@@ -25,6 +26,9 @@ last_modified_at: 2019-09-8T16:00:52-04:00
 As a graduated person, I cannot go to library with my student ID card anymore.
 Hence, I decided to apply an alumni library card instead to prepare for 
 GRE and TOEFL test.
+
+## 申請步驟(Application step)
+
 
 
 
