@@ -21,7 +21,7 @@ last_modified_at: 2019-09-8T16:00:52-04:00
 ## 為什麼申請校友借書證(Reason why I apply the library card)
 
 身為一個畢業的人，我再也不能用我的學生證進入圖書館了...
-所以我決定辦一張校友借書證已準備ＧＲＥ跟ＴＯＥＦＬ考試。
+所以我決定辦一張校友借書證以準備ＧＲＥ跟ＴＯＥＦＬ考試。
 
 As a graduated person, I cannot go to library with my student ID card anymore.
 Hence, I decided to apply an alumni library card instead to prepare for 
@@ -29,6 +29,6 @@ GRE and TOEFL test.
 
 ## 申請步驟(Application step)
 
-
+之後補上XD
 
 
