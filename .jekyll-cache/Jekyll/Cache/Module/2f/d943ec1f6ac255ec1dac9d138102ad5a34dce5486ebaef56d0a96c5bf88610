@@ -1,4 +1,4 @@
-I"Ø
+I"½
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -12,19 +12,15 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
               <a href="/year-archive/" >Posts</a>
             </li><li class="masthead__menu-item">
               <a href="/categories/" >Categories</a>
             </li><li class="masthead__menu-item">
-              <a href="/tags/" >Tags</a>
-            </li><li class="masthead__menu-item">
               <a href="/page-archive/" >Pages</a>
             </li><li class="masthead__menu-item">
-              <a href="/collection-archive/" >Collections</a>
+              <a href="/portfolios/" >Portfolio</a>
             </li><li class="masthead__menu-item">
-              <a href="https://google.com" >External Link</a>
+              <a href="/about-me/" >About</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
