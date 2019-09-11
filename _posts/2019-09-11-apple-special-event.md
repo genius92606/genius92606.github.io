@@ -21,7 +21,7 @@ last_modified_at: 2019-09-11T16:00:52-04:00
 
 Apple announced several devices and services.
 
-However, I'll focus on the Ipad only~
+However, I'll focus on the Ipad in this post only~
 
 ## Ipad 7th generation
 
@@ -61,3 +61,4 @@ Such as
 |**Connector**      |Allow smart connector|
 {: .notice--danger}
 
+The price is the same though...
