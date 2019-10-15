@@ -26,7 +26,7 @@ url                      : "https://genius92606.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/unsplash-image-1.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/happy-face" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/happy-face.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Dreamfall's world" # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -121,9 +121,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:martin33156@gmail.com
-    - label: "https://genius92606.github.io"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/genius92606"
@@ -286,6 +283,17 @@ compress_html:
   ignore:
     envs: development
 
+#collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /:collection/:path/
+  rendering:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -300,3 +308,11 @@ defaults:
       comments: true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: rendering
+    values:
+      layout: single
+      author_profile: true
+      share: true

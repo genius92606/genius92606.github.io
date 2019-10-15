@@ -4,10 +4,10 @@ main:
     url: /year-archive/
   - title: "Categories"
     url: /categories/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Portfolio"
-    url: /portfolios/
+  - title: "Projects"
+    url: /projects/
+  - title: "Courses"
+    url: /courses/
   - title: "About"
     url: /about-me/
   # - title: "Sample Posts"
