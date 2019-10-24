@@ -1,4 +1,4 @@
-I"Z
+I"
 <div class="feature__wrapper">
 
   
@@ -176,9 +176,6 @@
 
 </div>
 
-<!--  
-
-
 <div class="feature__wrapper">
 
   
@@ -189,11 +186,7 @@
       <div class="archive__item">
         
           <div class="archive__item-teaser">
-            <img src=
-              
-                "/assets/courses/images/CG2.png"
-              
-            alt="placeholder image 2">
+            <img src="/assets/courses/images/CG2.png" alt="placeholder image 2" />
             
           </div>
         
@@ -219,7 +212,6 @@
   
 
 </div>
--->
 
 <div class="feature__wrapper">
 
