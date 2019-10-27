@@ -46,6 +46,12 @@ feature_row4:
     url: "courses/rendering/"
     btn_label: "Read More"
     btn_class: "btn--primary"
+  - image_path: /assets/courses/images/computer-graphic.jpg
+    title: "Computer graphics"
+    excerpt: 'Application'
+    url: "courses/CG2019/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"  
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -62,13 +68,13 @@ feature_row4:
 
 {% include feature_row id="intro3" type="center" %}
 
- <!--  
+<!--  
 {% include feature_row id="feature_row3" type="center" %}
 -->
 
 {% include feature_row id="intro4" type="center" %}
 
 
-{% include feature_row id="feature_row4" type="center" %}
+{% include feature_row id="feature_row4"  %}
 
 

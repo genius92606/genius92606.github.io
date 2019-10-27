@@ -294,6 +294,9 @@ collections:
   rendering:
     output: true
     permalink: /:collection/:path/
+  CG2019:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -316,3 +319,11 @@ defaults:
       layout: single
       author_profile: true
       share: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: CG2019
+    values:
+      layout: single
+      author_profile: true
+      share: true    
