@@ -32,11 +32,12 @@ feature_row2:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row3:
-  - image_path: /assets/courses/images/CG2.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
+  - image_path: http://web.svgncti.org/wp-content/uploads/2017/10/course-product-image.Web-Programmingpng-600x360.png
+    image_caption: "Image courtesy of [NCTI](http://web.svgncti.org/product/web-programming/)"
+    alt: "placeholder image 1"
+    title: "Web Programming"
+    excerpt: "A hard course about web programming"
+    url: "courses/wp2018/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row4:
@@ -62,15 +63,15 @@ feature_row4:
 
 {% include feature_row id="intro2" type="center" %}
 
-<!--  
+<!--
 {% include feature_row id="feature_row2" type="center" %}
 -->
 
 {% include feature_row id="intro3" type="center" %}
 
-<!--  
-{% include feature_row id="feature_row3" type="center" %}
--->
+ 
+{% include feature_row id="feature_row3"  %}
+
 
 {% include feature_row id="intro4" type="center" %}
 

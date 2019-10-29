@@ -7,6 +7,10 @@ header:
 
 ---
 
+作業pdf
+===
+<iframe src="https://docs.google.com/viewer?srcid=1DwSeJMkBvm3hCCVrxGDkjVhXx9YonrjX&pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:650px;" frameborder="0"></iframe>
+
 
 Result
 ==

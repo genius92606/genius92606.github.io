@@ -14,7 +14,7 @@ and explore the unknown to make our life meaningful.
 
 ## Personal information
 
-* mail:martin33156@gmail.com
+* [mail](mailto:martin33156@gmail.com)
 * [github](https://github.com/genius92606)
 * [facebook](https://www.facebook.com/profile.php?id=100000413662587&ref=bookmarks)
 * [instagram](https://www.instagram.com/dream_fall92606/)

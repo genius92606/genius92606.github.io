@@ -1,0 +1,61 @@
+I"�<h1 id="作業pdf">作業pdf</h1>
+<iframe src="https://zoro.ee.ncku.edu.tw/slide/wp2018/?1" style="width:200%; height:1000px;" frameborder="0"></iframe>
+
+<h1 id="作業環境">作業環境</h1>
+<p>Windows10, visual studio 2015</p>
+<ul>
+  <li>GLFW
+允許使用者創建OpenGL上下文，定義窗口參數以及處理輸入</li>
+  <li>GML 
+OpenGL Mathematics，幫助數學運算的函示庫</li>
+  <li>GLEW
+OpenGL Extension Wrangler provides，能自動識別使用者的平台所支持的全部OpenGL高級況展函數。</li>
+</ul>
+
+<p>所以我們把以上include進自己的專案中</p>
+
+<ol>
+  <li>include檔案夾包含各種.h檔</li>
+  <li>lib檔案夾包含各種lib檔案，讓動態連結程式庫(dll)去取用</li>
+</ol>
+
+<p>light.frag &amp; light.vert 用來setup shader</p>
+
+<h1 id="方法說明">方法說明</h1>
+
+<p>進入build
+開啟ConsoleApplication.sln按執行或
+進入Release開啟ConsoleApplication.exe</p>
+
+<h1 id="程式如何操作">程式如何操作</h1>
+
+<ol>
+  <li>一開始GLFW 初始化</li>
+  <li>set the hint before glfwCreateWindow</li>
+  <li>然後 create window</li>
+  <li>設context</li>
+  <li>確認keycallback  在這裡我們用到”ESC”</li>
+  <li>load shader</li>
+  <li>add_obj by “tiny_obj_loader”
+    <ul>
+      <li>產生VBO、VAO 然後bindbuffer</li>
+    </ul>
+  </li>
+  <li>開始render~~~
+    <ul>
+      <li>set the camera matrix</li>
+      <li>可以參考以下網站~
+        <blockquote>
+          <p>https://learnopengl.com/Getting-started/Camera</p>
+        </blockquote>
+      </li>
+      <li>bind VAO</li>
+      <li>set translate and rotate matrix</li>
+      <li>draw objects~~~</li>
+      <li>unbind VAO</li>
+    </ul>
+  </li>
+  <li>關視窗</li>
+</ol>
+
+:ET
