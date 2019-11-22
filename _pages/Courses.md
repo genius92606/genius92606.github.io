@@ -41,6 +41,14 @@ feature_row3:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row4:
+  - image_path: http://web.svgncti.org/wp-content/uploads/2017/10/course-product-image.Web-Programmingpng-600x360.png
+    image_caption: "Image courtesy of [NCTI](http://web.svgncti.org/product/web-programming/)"
+    alt: "placeholder image 1"
+    title: "Web Programming"
+    excerpt: "A hard course about web programming"
+    url: "courses/wp2018/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
   - image_path: /assets/courses/images/CG2.png
     title: "Rendering"
     excerpt: 'Rendering class'

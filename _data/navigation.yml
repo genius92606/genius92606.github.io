@@ -8,6 +8,8 @@ main:
     url: /projects/
   - title: "Courses"
     url: /courses/
+  - title: "Portfolio"
+    url: /Portfolio/
   - title: "About"
     url: /about-me/
   # - title: "Sample Posts"
