@@ -9,7 +9,7 @@ main:
   - title: "Courses"
     url: /courses/
   - title: "Portfolio"
-    url: /Portfolio/
+    url: /portfolio/
   - title: "About"
     url: /about-me/
   # - title: "Sample Posts"
