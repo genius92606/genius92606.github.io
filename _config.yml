@@ -303,6 +303,9 @@ collections:
   embedded:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -345,6 +348,14 @@ defaults:
   - scope:
       path: ""
       type: embedded
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: projects
     values:
       layout: single
       author_profile: true
