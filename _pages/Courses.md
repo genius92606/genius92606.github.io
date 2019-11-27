@@ -32,12 +32,12 @@ feature_row2:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row3:
-  - image_path: http://web.svgncti.org/wp-content/uploads/2017/10/course-product-image.Web-Programmingpng-600x360.png
-    image_caption: "Image courtesy of [NCTI](http://web.svgncti.org/product/web-programming/)"
+  - image_path: https://volersystems.com/wp-content/uploads/2016/10/Voler-Robot-embeddedsystems.png
+    image_caption: "Image courtesy of [volersystems](https://volersystems.com/product-design/embedded-systems/)"
     alt: "placeholder image 1"
-    title: "Web Programming"
-    excerpt: "A hard course about web programming"
-    url: "courses/wp2018/"
+    title: "Embedded System"
+    excerpt: "Arduino~"
+    url: "courses/embedded system/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row4:
@@ -60,7 +60,21 @@ feature_row4:
     excerpt: 'Application'
     url: "courses/CG2019/"
     btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: https://www.automotivetestingtechnologyinternational.com/wp-content/uploads/2018/08/5.-Computational-Fluid-Dynamics-CFD-Streamline-model-simulation-I.D.-R-Pikes-Peak.jpg
+    image_caption: "Image courtesy of [automotivetestingtechnologyinternational](https://www.automotivetestingtechnologyinternational.com/)"
+    title: "Computer aided engineering"
+    excerpt: 'MATLAB'
+    url: "courses/CAE/"
+    btn_label: "Read More"
     btn_class: "btn--primary"  
+  - image_path: https://faceit.ir/images/Marie_Behzadi/beh-asli.jpg
+    image_caption: "Image courtesy of [FaceIt](https://faceit.ir/news/5610/Which-Operating-System-Should-You-Choose-For-Your-Next-PC)"
+    title: "Operating System"
+    excerpt: 'C++'
+    url: "courses/OS/"
+    btn_label: "Read More"
+    btn_class: "btn--primary" 
 ---
 
 {% include feature_row id="intro" type="center" %}

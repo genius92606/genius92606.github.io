@@ -1,0 +1,196 @@
+I"{<h1 id="bluetooth">Bluetooth</h1>
+
+<ul>
+  <li>Recall to Lab “Part-8-Voltage Data Logger”
+    <ul>
+      <li>Please implement a analog-to-digital converter function in your Arduino.
+        <ul>
+          <li>Sampling rate: 10 Hz.</li>
+          <li>Analog input: PIN A0</li>
+        </ul>
+      </li>
+      <li>Please generate a DC voltage from power supply and fed into Arduino PIN A0, then convert the analog DC voltage into digital data in Arduino every (1/10) sec.</li>
+      <li>Transmit the digitalized ADC data from Arduino to PC via Bluetooth and display it in the PC’s terminal software.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Arduino Code:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;SoftwareSerial.h&gt;   // 引用程式庫
+</span> 
+<span class="c1">// 定義連接藍牙模組的序列埠</span>
+<span class="n">SoftwareSerial</span> <span class="nf">BT</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span> <span class="c1">// 接收腳, 傳送腳</span>
+<span class="kt">char</span> <span class="n">val</span><span class="p">;</span>  <span class="c1">// 儲存接收資料的變數</span>
+ 
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>   <span class="c1">// 與電腦序列埠連線</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"BT is ready!"</span><span class="p">);</span>
+ 
+  <span class="c1">// 設定藍牙模組的連線速率</span>
+  <span class="c1">// 如果是HC-05，請改成38400</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+ 
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 若收到「序列埠監控視窗」的資料，則送到藍牙模組</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="n">BT</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+  <span class="p">}</span>
+ 
+  <span class="c1">// 若收到藍牙模組的資料，則送到「序列埠監控視窗」</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">BT</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">BT</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="adder--multiplier">Adder &amp; Multiplier</h1>
+<p>Design a 3-bits adder (input) and a 3-bits (input) multiplier, please assign two 3-bit as inputs, 6-bit as output. You can only use the basic logic operation in the Arduino (such as NOT, AND, OR, XOR…). Mathematical arrhythmic operation in Arduino is prohibited in this lab-practice.</p>
+<iframe src="https://docs.google.com/viewer?srcid=1l5LIgOKxkG4W22tIYvnAj86uM8Du6Nr8&amp;pid=explorer&amp;efh=false&amp;a=v&amp;chrome=false&amp;embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
+
+<p>Arduino Code:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">Aa</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Ab</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Ac</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Ba</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Bb</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Bc</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">S</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Ca</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Cb</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Cc</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Cd</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Ce</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">Cf</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// put your setup code here, to run once:</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Aa</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Ab</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Ac</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Ba</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Bb</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Bc</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Ca</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Cb</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Cc</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Cd</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Ce</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">Cf</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// put your main code here, to run repeatedly:</span>
+<span class="kt">int</span> <span class="n">a1</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Aa</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">a2</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Ab</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">a3</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Ac</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">b1</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Ba</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">b2</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Bb</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">b3</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">Bc</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">selectMode</span><span class="o">=</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">S</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">c1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">c2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">c3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">c4</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">c5</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">c6</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">d1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">d2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">d3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">e1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">e2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">e3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">f1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">f2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">f3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">g1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">g2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">g3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">g4</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">h1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">h2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">h3</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">selectMode</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">c1</span><span class="o">=</span><span class="p">((</span><span class="o">~</span><span class="n">a1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b1</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">a1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">b1</span><span class="p">));</span>
+<span class="n">d2</span><span class="o">=</span><span class="n">a1</span><span class="o">&amp;</span><span class="n">b1</span><span class="p">;</span>
+<span class="n">d3</span><span class="o">=</span><span class="p">(</span><span class="n">a2</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">b2</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">a2</span><span class="o">&amp;</span><span class="n">b2</span><span class="p">);</span>
+<span class="n">c2</span><span class="o">=</span><span class="p">((</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">b2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">b2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">));</span>
+<span class="n">c4</span><span class="o">=</span><span class="p">(</span><span class="n">a3</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">b3</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">a3</span><span class="o">&amp;</span><span class="n">b3</span><span class="p">);</span>
+<span class="n">c3</span><span class="o">=</span><span class="p">((</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">b3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">b3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">));</span>
+<span class="n">c5</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="n">c6</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="n">c1</span><span class="o">=</span><span class="p">((</span><span class="n">a1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b1</span><span class="p">));</span>
+
+<span class="n">e1</span><span class="o">=</span><span class="p">((</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b1</span><span class="p">));</span>
+<span class="n">e2</span><span class="o">=</span><span class="p">((</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b1</span><span class="p">));</span>
+<span class="n">e3</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="n">f1</span><span class="o">=</span><span class="p">((</span><span class="n">a1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b2</span><span class="p">));</span>
+<span class="n">f2</span><span class="o">=</span><span class="p">((</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b2</span><span class="p">));</span>
+<span class="n">f3</span><span class="o">=</span><span class="p">((</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b2</span><span class="p">));</span>
+
+<span class="n">g1</span><span class="o">=</span><span class="p">((</span><span class="o">~</span><span class="n">e1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">f1</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">e1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">f1</span><span class="p">));</span>
+<span class="n">d2</span><span class="o">=</span><span class="n">e1</span><span class="o">&amp;</span><span class="n">f1</span><span class="p">;</span>
+<span class="n">d3</span><span class="o">=</span><span class="p">(</span><span class="n">e2</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">f2</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">e2</span><span class="o">&amp;</span><span class="n">f2</span><span class="p">);</span>
+<span class="n">g2</span><span class="o">=</span><span class="p">((</span><span class="n">e2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">f2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">e2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">f2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">e2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">e2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">));</span>
+<span class="n">g4</span><span class="o">=</span><span class="p">(</span><span class="n">e3</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">f3</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">e3</span><span class="o">&amp;</span><span class="n">f3</span><span class="p">);</span>
+<span class="n">g3</span><span class="o">=</span><span class="p">((</span><span class="n">e3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">f3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">e3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">f3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">e3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">e3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">));</span>
+<span class="n">c2</span><span class="o">=</span><span class="n">g1</span><span class="p">;</span>
+
+<span class="n">h1</span><span class="o">=</span><span class="p">((</span><span class="n">a1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b3</span><span class="p">));</span>
+<span class="n">h2</span><span class="o">=</span><span class="p">((</span><span class="n">a2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b3</span><span class="p">));</span>
+<span class="n">h3</span><span class="o">=</span><span class="p">((</span><span class="n">a3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">b3</span><span class="p">));</span>
+
+<span class="n">c3</span><span class="o">=</span><span class="p">((</span><span class="o">~</span><span class="n">g2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">h1</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">g2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">h1</span><span class="p">));</span>
+<span class="n">d2</span><span class="o">=</span><span class="n">g2</span><span class="o">&amp;</span><span class="n">h1</span><span class="p">;</span>
+<span class="n">d3</span><span class="o">=</span><span class="p">(</span><span class="n">g3</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">h2</span><span class="o">&amp;</span><span class="n">d2</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">g3</span><span class="o">&amp;</span><span class="n">h2</span><span class="p">);</span>
+<span class="n">c4</span><span class="o">=</span><span class="p">((</span><span class="n">g3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">h2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">g3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">h2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">g3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d2</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">g3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d2</span><span class="p">));</span>
+<span class="n">c6</span><span class="o">=</span><span class="p">(</span><span class="n">g4</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">h3</span><span class="o">&amp;</span><span class="n">d3</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">g4</span><span class="o">&amp;</span><span class="n">h3</span><span class="p">);</span>
+<span class="n">c5</span><span class="o">=</span><span class="p">((</span><span class="n">g4</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">h3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">g4</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">h3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">g4</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">d3</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="o">~</span><span class="n">g4</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">d3</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">c1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Ca</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Ca</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cb</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cb</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c3</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cc</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cc</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c4</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cd</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cd</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">c5</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Ce</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Ce</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">c6</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cf</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">Cf</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="discussion">Discussion</h1>
+<p>藍芽對於嵌入式裝置真的是分常的重要，因為我們很多嵌入式的裝置只要透過藍芽，就可以變為無線，讓整個裝置更加的完整。藍芽模組也算是好設定、好使用的~所以學習藍芽模組真的是非常重要的。</p>
+:ET

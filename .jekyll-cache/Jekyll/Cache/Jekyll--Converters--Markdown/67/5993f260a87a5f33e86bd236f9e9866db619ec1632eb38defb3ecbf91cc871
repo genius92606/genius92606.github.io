@@ -1,0 +1,93 @@
+I"|<h1 id="bluetooth">Bluetooth</h1>
+
+<ul>
+  <li>Recall to Lab “Part-8-Voltage Data Logger”
+    <ul>
+      <li>Please implement a analog-to-digital converter function in your Arduino.
+        <ul>
+          <li>Sampling rate: 10 Hz.</li>
+          <li>Analog input: PIN A0</li>
+        </ul>
+      </li>
+      <li>Please generate a DC voltage from power supply and fed into Arduino PIN A0, then convert the analog DC voltage into digital data in Arduino every (1/10) sec.</li>
+      <li>Transmit the digitalized ADC data from Arduino to PC via Bluetooth and display it in the PC’s terminal software.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;SoftwareSerial.h&gt;   // 引用程式庫
+</span> 
+<span class="c1">// 定義連接藍牙模組的序列埠</span>
+<span class="n">SoftwareSerial</span> <span class="nf">BT</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span> <span class="c1">// 接收腳, 傳送腳</span>
+<span class="kt">char</span> <span class="n">val</span><span class="p">;</span>  <span class="c1">// 儲存接收資料的變數</span>
+ 
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>   <span class="c1">// 與電腦序列埠連線</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"BT is ready!"</span><span class="p">);</span>
+ 
+  <span class="c1">// 設定藍牙模組的連線速率</span>
+  <span class="c1">// 如果是HC-05，請改成38400</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+ 
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 若收到「序列埠監控視窗」的資料，則送到藍牙模組</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="n">BT</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+  <span class="p">}</span>
+ 
+  <span class="c1">// 若收到藍牙模組的資料，則送到「序列埠監控視窗」</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">BT</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">BT</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>communication code</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;SoftwareSerial.h&gt;   // 引用程式庫
+</span> 
+<span class="c1">// 定義連接藍牙模組的序列埠</span>
+<span class="n">SoftwareSerial</span> <span class="nf">BT</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span> <span class="c1">// 接收腳, 傳送腳</span>
+<span class="kt">char</span> <span class="n">val</span><span class="p">;</span>  <span class="c1">// 儲存接收資料的變數</span>
+<span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">time1</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>   <span class="c1">// 與電腦序列埠連線</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"BT is ready!"</span><span class="p">);</span>
+ 
+  <span class="c1">// 設定藍牙模組的連線速率</span>
+  <span class="c1">// 如果是HC-05，請改成38400</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+ 
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// read the input on analog pin 0:</span>
+  <span class="kt">int</span> <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span>
+  <span class="c1">// Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):</span>
+  <span class="kt">float</span> <span class="n">voltage</span> <span class="o">=</span> <span class="n">sensorValue</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="mi">1023</span><span class="p">.</span><span class="mi">0</span><span class="p">);</span>
+  <span class="c1">// print out the value you read:</span>
+  <span class="n">time1</span><span class="o">=</span><span class="n">millis</span><span class="p">();</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">time1</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">" ms "</span><span class="p">);</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">time1</span><span class="p">);</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">" ms "</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">voltage</span><span class="p">);</span>
+   <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" V "</span><span class="p">);</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">voltage</span><span class="p">);</span>
+  <span class="n">BT</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" V "</span><span class="p">);</span>
+   
+  <span class="n">delay</span><span class="p">(</span><span class="mi">84</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+<p>voltage data</p>
+
+<h1 id="communication">Communication</h1>
+
+<h1 id="results-voltage-data">Results-voltage data</h1>
+<p><img src="http://localhost:4000/assets/courses/embedded system/exp9-result.png" alt="image-center" class="align-center" /></p>
+
+<h1 id="discussion">Discussion</h1>
+<p>藍芽對於嵌入式裝置真的是分常的重要，因為我們很多嵌入式的裝置只要透過藍芽，就可以變為無線，讓整個裝置更加的完整。藍芽模組也算是好設定、好使用的~所以學習藍芽模組真的是非常重要的。</p>
+:ET
