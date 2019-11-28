@@ -2,8 +2,8 @@
 title : Exp1
 permalink: courses/embedded system/Exp1
 header:
-  image: /assets/courses/embedded system/Exp1.png
-  teaser: /assets/courses/embedded system/Exp1.png
+  image: /assets/courses/embedded system/exp1.png
+  teaser: /assets/courses/embedded system/exp1.png
 ---
 
 Thunderbolt

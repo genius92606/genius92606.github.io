@@ -16,7 +16,7 @@ gallery:
     image_path: https://i.imgur.com/HfypJu2.png
     alt: "placeholder image 3"
   - url: https://www.instagram.com/p/BWwnzAUALmH/?utm_source=ig_embed&utm_campaign=embed_video_watch_again
-    image_path: /assets/images/dreamfall.png
+    image_path: /assets/images/dreamfall.PNG
     alt: "placeholder image 4"
 author_profile: true
 ---

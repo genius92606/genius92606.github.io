@@ -2,8 +2,8 @@
 title : Exp5
 permalink: courses/embedded system/Exp5
 header:
-  image: /assets/courses/embedded system/exp5.png
-  teaser: /assets/courses/embedded system/exp5.png
+  image: /assets/courses/embedded system/exp5.PNG
+  teaser: /assets/courses/embedded system/exp5.PNG
 ---
 
 Get respiration using BMP280

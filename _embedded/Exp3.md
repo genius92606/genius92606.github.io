@@ -2,8 +2,8 @@
 title : Exp3
 permalink: courses/embedded system/Exp3
 header:
-  image: /assets/courses/embedded system/Exp3.png
-  teaser: /assets/courses/embedded system/Exp3.png
+  image: /assets/courses/embedded system/exp3.png
+  teaser: /assets/courses/embedded system/exp3.png
 ---
 
 Serial Communication (UART)

@@ -1,9 +1,0 @@
-I"<p>Our goal is to track a ball.
-We install a camera on a robotic arm.
-The camera was connected to the laptop so MATLAB can do image processing, then communicate to Arduino through bluetooth.
-Once the Arduino get the information, it will move the robotic arm, and keep tracking the ball.</p>
-
-<iframe src="https://luffy.ee.ncku.edu.tw/~genius92606/ajax/" style="width:100%; height:800px;" frameborder="0"></iframe>
-
-<p>The website <a href="https://luffy.ee.ncku.edu.tw/~genius92606/ajax/"><strong>link</strong></a></p>
-:ET
