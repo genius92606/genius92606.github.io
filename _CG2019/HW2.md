@@ -47,3 +47,21 @@ Source
 Link
 ==
 * [github](https://github.com/genius92606/opengl-shading)
+
+
+Result
+===
+<iframe src="/assets/courses/CG2019/HW2.mp4" style="width:100%; height:500px;" frameborder="0" allowfullscreen></iframe>
+
+Try it yourself
+===
+
+1. Click [here](/assets/courses/CG2019/CGHW2.rar) to download the file directly
+2. Open cmd and move to the folder "build"<br>
+3. Start "app.exe" file in folder "bin" <br>
+<br>
+For example:
+```
+cd C:\Users\genius92606\Desktop\CGHW2\build
+start bin/app.exe
+```

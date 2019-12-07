@@ -15,22 +15,9 @@ intro3:
 intro4: 
   - excerpt: 'senior'  
 feature_row:
-  - image_path: /assets/courses/images/CG2.png
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+
 feature_row2:
-  - image_path: /assets/courses/images/CG2.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+ 
 feature_row3:
   - image_path: https://volersystems.com/wp-content/uploads/2016/10/Voler-Robot-embeddedsystems.png
     image_caption: "Image courtesy of [volersystems](https://volersystems.com/product-design/embedded-systems/)"
@@ -38,6 +25,14 @@ feature_row3:
     title: "Embedded System"
     excerpt: "Arduino~"
     url: "courses/embedded system/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: https://i.udemycdn.com/course/750x422/1613828_fd1d_3.jpg
+    image_caption: "Image courtesy of [Udemy](https://www.udemy.com/course/coding-java-interview-algorithms-data-structure/)"
+    alt: "placeholder image 1"
+    title: "Data Structure"
+    excerpt: "C-Ubuntu"
+    url: "courses/data_structure/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row4:
@@ -79,9 +74,9 @@ feature_row4:
 
 {% include feature_row id="intro" type="center" %}
 
-<!--
+
 {% include feature_row %}
--->
+
 
 {% include feature_row id="intro2" type="center" %}
 

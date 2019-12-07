@@ -217,3 +217,17 @@ Resources
 * https://hackmd.io/Ws0u-GxWQxu2llPw_AqdWg?both
 
 
+Try it yourself
+===
+
+1. Click [here](/assets/courses/CG2019/CGHW2.rar) to download the file directly
+2. Open cmd and move to the folder "build"<br>
+3. Start "app.exe" file in folder "bin" <br>
+<br>
+For example:
+```
+cd C:\Users\genius92606\Desktop\CGHW2\build
+start bin/app.exe
+```
+
+

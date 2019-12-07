@@ -9,7 +9,7 @@ header:
 ---
 
 
-This is the final projects in the Computer Graphics course.  <br>
+This is the final projects in the Computer Graphics course in 2018.  <br>
 This is the old version of OpenGL, so it might be a litte different from the new version. <br>
 I utilized "InputStl.h" to input the object and learned how to use VBO.<br>
 Checked the condition of winning.<br>

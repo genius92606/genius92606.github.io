@@ -1,0 +1,222 @@
+I"�><h1 id="作業pdf">作業pdf</h1>
+<iframe src="https://docs.google.com/viewer?srcid=1DwSeJMkBvm3hCCVrxGDkjVhXx9YonrjX&amp;pid=explorer&amp;efh=false&amp;a=v&amp;chrome=false&amp;embedded=true" style="width:100%; height:650px;" frameborder="0"></iframe>
+
+<h1 id="result">Result</h1>
+<p><img src="https://i.imgur.com/qNShEWS.gif" alt="" /></p>
+
+<h1 id="library">library</h1>
+<p>由於OpenGL驅動版本眾多，它大說數函數的位置都無法在編譯的時候確定下來，需要再運行時查詢，GLAD提供用於運行時獲取OpenGL函數地址的方式</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;glad/glad.h&gt;
+</span></code></pre></div></div>
+<p>GLFW允許使用者創建OpenGL上下文，定義窗口參數以及處理輸入</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;GLFW/glfw3.h&gt;
+</span></code></pre></div></div>
+<p>OpenGL Mathematics(GML)，幫助數學運算的函示庫</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;glm/glm.hpp&gt;
+#include &lt;glm/gtc/matrix_transform.hpp&gt;
+#include &lt;glm/gtc/type_ptr.hpp&gt;
+</span></code></pre></div></div>
+<p>gui的函示</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;fmt/format.h&gt;
+#include &lt;imgui.h&gt;
+#include &lt;memory&gt;
+#include "imgui_impl_opengl3.h"
+#include "imgui_impl_glfw.h"
+</span></code></pre></div></div>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "WenCheng.h"
+</span></code></pre></div></div>
+<p>WenCheng.h裡包含</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "Texture.h"
+#include "StaticMesh.h"
+#include "ShaderProgram.h"
+#include "ScopeResource.h"
+</span></code></pre></div></div>
+
+<h1 id="rendering-pipeline">Rendering Pipeline</h1>
+
+<ol>
+  <li><strong>Vertex Specification</strong> 
+In Vertex Specification, list an ordered list of vertices that define the boundaries of the primitive. Along with this, one can define other vertex attributes like color, texture coordinates etc. Later this data is sent down and manipulated by the pipeline.</li>
+  <li><strong>Vertex Shader</strong> 
+The vertex specification defined above now pass through Vertex Shader. Vertex Shader is a program written in GLSL that manipulate the vertex data. The ultimate goal of vertex shader is to calculate final vertex position of each vertex. Vertex shaders are executed once for every vertex(in case of a triangle it will execute 3-times) that the GPU processes. So if the scene consists of one million vertices, the vertex shader will execute one million times once for each vertex. The main job of a vertex shader is to calculate the final positions of the vertices in the scene.</li>
+  <li><strong>Tessellation</strong> 
+This is a optional stage. In this stage primitives are tessellated i.e. divided into smoother mesh of triangles.</li>
+  <li><strong>Geometry Shader</strong> 
+This shader stage is also optional. The work of Geometry Shader is to take an input primitive and generate zero or more output primitive. If a triangle strip is sent as a single primitive, geometry shader will visualize a series of triangles. Geometry Shader is able to remove primitives or tessellate them by outputting many primitives for a single input. Geometry shaders can also convert primitives to different types. For example, point primitive can become triangles.</li>
+  <li><strong>Vertex Post Processing</strong> 
+This is a fixed function stage i.e. user has a very limited to no control over these stages. The most important part of this stage is Clipping. Clipping discards the area of primitives that lie outside the viewing volume.</li>
+  <li><strong>Primitive Assembly</strong> 
+This stage collects the vertex data into a ordered sequence of simple primitives(lines, points or triangles).</li>
+  <li><strong>Rasterization</strong> 
+This is an important step in this pipeline. The output of rasterization is a fragments.</li>
+  <li><strong>Fragment Shader</strong> 
+Although not necessary a required stage but 96% of the time it is used. This user-written program in GLSL calculates the color of each fragment that user sees on the screen. The fragment shader runs for each fragment in the geometry. The job of the fragment shader is to determine the final color for each fragment.</li>
+  <li><strong>Per-sample Operations</strong> 
+There are few tests that are performed based on user has activated them or not. Some of these tests for example are Pixel ownership test, Scissor Test, Stencil Test, Depth Test.</li>
+</ol>
+
+<h1 id="staticmesh">StaticMesh</h1>
+
+<ol>
+  <li>
+    <p>VBO(vertex buffer object)
+  store a large number of vertices in the GPU’s memory~</p>
+  </li>
+  <li>
+    <p>VAO(vertex array object)
+It can be bound vertex buffer objects</p>
+  </li>
+  <li>
+    <p>IBO(index buffer object) or EBO(element buffer object)
+they reduce the repeat vertices</p>
+  </li>
+  <li>
+    <p>indices</p>
+  </li>
+</ol>
+
+<h1 id="shaderprogram">ShaderProgram</h1>
+
+<p><strong>main.cpp</strong>中可以看到</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">prog</span> <span class="o">=</span> <span class="n">Program</span><span class="o">::</span><span class="n">LoadFromFile</span><span class="p">(</span>
+        <span class="s">"../resource/vs.vert"</span><span class="p">,</span>
+        <span class="s">"../resource/fs.frag"</span>
+    <span class="p">);</span>
+</code></pre></div></div>
+<p>可以在<strong>ShaderProgram.cpp</strong>找到</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Program</span> <span class="n">Program</span><span class="o">::</span><span class="n">LoadFromFile</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">vs</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">fs</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">auto</span> <span class="n">vs_src</span> <span class="o">=</span> <span class="o">::</span><span class="n">read_file</span><span class="p">(</span><span class="n">vs</span><span class="p">);</span>
+	<span class="k">auto</span> <span class="n">fs_src</span> <span class="o">=</span> <span class="o">::</span><span class="n">read_file</span><span class="p">(</span><span class="n">fs</span><span class="p">);</span>
+
+    <span class="k">try</span><span class="p">{</span>
+        <span class="n">GLuint</span> <span class="n">vshader</span> <span class="o">=</span> <span class="n">CreateShader</span><span class="p">(</span><span class="n">GL_VERTEX_SHADER</span><span class="p">,</span> <span class="n">vs_src</span><span class="p">);</span>
+        <span class="n">GLuint</span> <span class="n">fshader</span> <span class="o">=</span> <span class="n">CreateShader</span><span class="p">(</span><span class="n">GL_FRAGMENT_SHADER</span><span class="p">,</span> <span class="n">fs_src</span><span class="p">);</span>
+
+        <span class="n">GLuint</span> <span class="n">id</span> <span class="o">=</span> <span class="n">glCreateProgram</span><span class="p">();</span>
+        <span class="n">glAttachShader</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">vshader</span><span class="p">);</span>
+        <span class="n">glAttachShader</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">fshader</span><span class="p">);</span>
+        <span class="n">glLinkProgram</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    
+        <span class="n">glDeleteShader</span><span class="p">(</span><span class="n">vshader</span><span class="p">);</span>
+        <span class="n">glDeleteShader</span><span class="p">(</span><span class="n">fshader</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">Program</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span> <span class="o">&amp;</span><span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="o">&lt;&lt;</span><span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">();</span>
+        <span class="k">return</span> <span class="n">Program</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>讀取vertex and fragment shader
+Create shader and program, then attach and link.</p>
+
+<h1 id="hint">Hint</h1>
+
+<p>一些Hint，需在create window前設置好
+版本、上下文的配置…</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">glfwWindowHint</span><span class="p">(</span><span class="n">GLFW_CONTEXT_VERSION_MAJOR</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">glfwWindowHint</span><span class="p">(</span><span class="n">GLFW_CONTEXT_VERSION_MINOR</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+    <span class="n">glfwWindowHint</span><span class="p">(</span><span class="n">GLFW_OPENGL_PROFILE</span><span class="p">,</span> <span class="n">GLFW_OPENGL_CORE_PROFILE</span><span class="p">);</span>
+    <span class="n">window</span> <span class="o">=</span> <span class="n">glfwCreateWindow</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="s">"Simple example"</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h1 id="about-maincpp">About main.cpp</h1>
+
+<p><strong>main.cpp</strong></p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Do not remove {}, why???</span>
+    <span class="p">{</span>
+    <span class="c1">// text and mesh, shader =&gt; garbage collector</span>
+    <span class="k">auto</span> <span class="n">g1</span> <span class="o">=</span> <span class="n">Protect</span><span class="p">(</span><span class="n">text_sun</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">g2</span> <span class="o">=</span> <span class="n">Protect</span><span class="p">(</span><span class="n">mesh_sun</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">g3</span> <span class="o">=</span> <span class="n">Protect</span><span class="p">(</span><span class="n">prog_sun</span><span class="p">);</span>
+    
+    <span class="c1">//a lot of codes here</span>
+    
+    <span class="p">}</span>
+    <span class="n">glfwDestroyWindow</span><span class="p">(</span><span class="n">window</span><span class="p">);</span>
+    <span class="n">glfwTerminate</span><span class="p">();</span>
+</code></pre></div></div>
+<ul>
+  <li>The {} should not be removed so that we can release the resource first before terminating the program.</li>
+</ul>
+
+<hr />
+<p>go to <strong>ScopeResource.h</strong> for definition of Protect()</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Deleter</span>
+<span class="p">{</span>
+    <span class="kt">void</span> <span class="k">operator</span><span class="p">()(</span><span class="n">T</span> <span class="o">*</span><span class="n">rhs</span><span class="p">)</span> <span class="k">const</span><span class="p">{</span>
+        <span class="n">rhs</span><span class="o">-&gt;</span><span class="n">release</span><span class="p">();</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="o">&lt;&lt;</span><span class="s">"RElease</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+<span class="k">auto</span> <span class="nf">Protect</span><span class="p">(</span><span class="n">T</span> <span class="o">&amp;</span><span class="n">rhs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rhs</span><span class="p">,</span> <span class="n">Deleter</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">());</span>
+<span class="err">}</span>
+</code></pre></div></div>
+<ul>
+  <li>Operator overloading
+    <ul>
+      <li>void operator()(T *rhs)</li>
+      <li><a href="https://www.tutorialspoint.com/cplusplus/function_call_operator_overloading.htm">resource link</a></li>
+    </ul>
+  </li>
+  <li>Arrow operator in function heading
+    <ul>
+      <li>auto Protect(T &amp;rhs) -&gt; std::shared_ptr<T></T></li>
+      <li><a href="https://stackoverflow.com/questions/22514855/arrow-operator-in-function-heading">resource link</a></li>
+    </ul>
+  </li>
+  <li>std::shared_ptr
+    <ul>
+      <li>return std::shared_ptr<T>(&amp;rhs, Deleter<T>());</T></T></li>
+      <li><a href="https://en.cppreference.com/w/cpp/memory/shared_ptr">resource link</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="環境設置">環境設置</h1>
+
+<p><strong>Case 1</strong>
+一開始還沒透過conan下載package所以有問題</p>
+
+<p><strong>Case 2</strong>
+後來cmd執行cmake時遇到了<img src="https://i.imgur.com/njXstzL.jpg" alt="" />
+只需這樣便可解決
+<img src="https://i.imgur.com/0ouyThE.jpg" alt="" /></p>
+
+<p><strong>Case 3</strong>
+最後直接開啟app.exe遇到的問題<img src="https://i.imgur.com/e4MECHv.jpg" alt="" />
+因為動態函示庫在外面的關西
+所以用cmd在build資料夾中執行</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start bin\app.exe
+</code></pre></div></div>
+<p>便可編譯</p>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+  <li>https://www.geeksforgeeks.org/opengl-rendering-pipeline-overview/</li>
+  <li>https://learnopengl.com/Getting-started/Hello-Triangle</li>
+  <li>https://learnopengl-cn.readthedocs.io/zh/latest/01%20Getting%20started/04%20Hello%20Triangle/</li>
+  <li>https://hackmd.io/Ws0u-GxWQxu2llPw_AqdWg?both</li>
+</ul>
+
+<h1 id="try-it-yourself">Try it yourself</h1>
+
+<ol>
+  <li>Click <a href="/assets/courses/CG2019/CGHW2.rar">here</a> to download the file directly</li>
+  <li>Open cmd and move to the folder “build”<br /></li>
+  <li>Start “app.exe” file in folder “bin” <br />
+<br />
+For example:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\Users\genius92606\Desktop\CGHW2\build
+start bin/app.exe
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+:ET
