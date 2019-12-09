@@ -2,9 +2,9 @@
 title : rendering-hw3
 permalink: courses/rendering/hw3
 header:
-  image: https://i.ytimg.com/vi/rmO1hQF8-70/maxresdefault.jpg
-  teaser: https://i.ytimg.com/vi/rmO1hQF8-70/maxresdefault.jpg
-  caption: "Photo credit: [https://www.youtube.com/watch?v=rmO1hQF8-70](https://www.youtube.com/watch?v=rmO1hQF8-70)"
+  image: /assets/courses/rendering/HW3.gif
+  teaser: /assets/courses/rendering/HW3.gif
+
 ---
 
 
@@ -65,3 +65,13 @@ Windows10, visual studio 2015
 * [HackMD](https://hackmd.io/s/Bk1QLx_hN)
 * [GitHub](https://github.com/genius92606/character_OpenGL)
 * [HW_PPT](https://github.com/genius92606/character_OpenGL/blob/master/OpenGL_homework_3.pptx)
+
+Download
+===
+You can download exe file [here](/assets/courses/rendering/HW3.zip) directly
+
+Result
+===
+
+<iframe src="/assets/courses/rendering/HW3.mp4" style="width:100%; height:500px;" frameborder="0" allowfullscreen></iframe>
+

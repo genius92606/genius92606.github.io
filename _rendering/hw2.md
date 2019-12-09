@@ -2,8 +2,8 @@
 title : rendering-hw2
 permalink: courses/rendering/hw2
 header:
-  image: /assets/courses/images/CG2.png
-  teaser: /assets/courses/images/CG2.png
+  image: /assets/courses/rendering/HW2.PNG
+  teaser: /assets/courses/rendering/HW2.PNG
 ---
 
 
@@ -39,3 +39,12 @@ Windows10, visual studio 2017, OpenCV4.1.0
 * [Youtube](https://youtu.be/6SFuWqz241A)
 
 
+Download
+===
+You can download exe file [here](/assets/courses/rendering/Image-morphing.rar) directly
+
+Result
+===
+
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6SFuWqz241A?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>

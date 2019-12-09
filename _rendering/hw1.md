@@ -2,8 +2,8 @@
 title : rendering-hw1
 permalink: courses/rendering/hw1
 header:
-  image: /assets/courses/images/CG1.jpg
-  teaser: /assets/courses/images/CG1.jpg
+  image: /assets/courses/rendering/CG1.gif
+  teaser: /assets/courses/rendering/CG1.gif
 
 ---
 
@@ -57,5 +57,14 @@ light.frag & light.vert 用來setup shader
     * draw objects~~~
     * unbind VAO
 9. 關視窗
+
+Download
+===
+You can download exe file [here](/assets/courses/rendering/HW1.zip) directly
+
+Result
+===
+
+<iframe src="/assets/courses/rendering/CG1.mp4" style="width:100%; height:500px;" frameborder="0" allowfullscreen></iframe>
 
 

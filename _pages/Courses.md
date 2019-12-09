@@ -44,13 +44,13 @@ feature_row4:
     url: "courses/wp2018/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/courses/images/CG2.png
+  - image_path: /assets/courses/rendering/rendering.jpg
     title: "Rendering"
     excerpt: 'Rendering class'
     url: "courses/rendering/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/courses/images/computer-graphic.jpg
+  - image_path: /assets/courses/rendering/computer-graphic.jpg
     title: "Computer graphics"
     excerpt: 'Application'
     url: "courses/CG2019/"
