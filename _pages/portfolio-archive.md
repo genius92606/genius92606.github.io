@@ -25,7 +25,7 @@ gallery:
     alt: "Placeholder image 5"
 gallery1:
   - url: /courses/CG2019/HW1
-    image_path: /assets/courses/images/CG2019-hw1.gif
+    image_path: /assets/courses/CG2019/CG2019-hw1.gif
     alt: "placeholder image 1"
   - url: /courses/CG2019/HW2
     image_path: /assets/courses/CG2019/HW2.PNG
@@ -34,7 +34,7 @@ gallery1:
     image_path: /assets/courses/CG2019/final.jpg
     alt: "placeholder image 3"
   - url: /courses/rendering/hw1
-    image_path: /assets/courses/images/CG1.gif
+    image_path: /assets/courses/rendering/CG1.gif
     alt: "placeholder image 4"
 author_profile: true
 ---
