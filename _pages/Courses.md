@@ -35,6 +35,13 @@ feature_row3:
     url: "courses/data_structure/"
     btn_label: "Read More"
     btn_class: "btn--primary"
+  - image_path: https://lh3.googleusercontent.com/F4K9GDvaQV_tnZY6DHUKEpsp3u7K3ZBvjXNDhhvWhc-akUJessnJC_fzLGV4Nq2e6dU
+    image_caption: "Image courtesy of [Engineering Apps](https://play.google.com/store/apps/details?id=com.faadooengineers.free_computergraphics&hl=zh)"
+    title: "Computer graphics"
+    excerpt: 'Old version'
+    url: "courses/CG2017/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 feature_row4:
   - image_path: http://web.svgncti.org/wp-content/uploads/2017/10/course-product-image.Web-Programmingpng-600x360.png
     image_caption: "Image courtesy of [NCTI](http://web.svgncti.org/product/web-programming/)"

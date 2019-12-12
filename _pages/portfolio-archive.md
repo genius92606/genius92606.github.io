@@ -30,12 +30,21 @@ gallery1:
   - url: /courses/CG2019/HW2
     image_path: /assets/courses/CG2019/HW2.PNG
     alt: "placeholder image 2"
-  - url: https://vimeo.com/374829468?ref=tw-share
+  - url: /projects/path-tracing
     image_path: /assets/courses/CG2019/final.jpg
     alt: "placeholder image 3"
   - url: /courses/rendering/hw1
     image_path: /assets/courses/rendering/CG1.gif
     alt: "placeholder image 4"
+  - url: /courses/rendering/hw2
+    image_path: /assets/courses/rendering/morphing.PNG
+    alt: "placeholder image 5"
+  - url: /courses/rendering/hw3
+    image_path: /assets/courses/rendering/HW3.gif
+    alt: "placeholder image 5"
+  - url: /projects/simple-3d-software
+    image_path: /assets/projects/final.gif
+    alt: "placeholder image 6"
 author_profile: true
 ---
 

@@ -309,6 +309,9 @@ collections:
   DS:
     output: true
     permalink: /:collection/:path/
+  CG2017:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -371,3 +374,11 @@ defaults:
       layout: single
       author_profile: true
       share: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: CG2017
+    values:
+      layout: single
+      author_profile: true
+      share: true 

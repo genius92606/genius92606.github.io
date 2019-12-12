@@ -2,8 +2,8 @@
 title : CG2019-HW1
 permalink: courses/CG2019/HW1
 header:
-  image: /assets/courses/images/CG2019-hw1.gif
-  teaser: /assets/courses/images/CG2019-hw1.gif
+  image: /assets/courses/CG2019/CG2019-hw1.gif
+  teaser: /assets/courses/CG2019/CG2019-hw1.gif
 
 ---
 
