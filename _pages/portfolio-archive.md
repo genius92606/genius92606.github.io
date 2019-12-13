@@ -45,6 +45,18 @@ gallery1:
   - url: /projects/simple-3d-software
     image_path: /assets/projects/final.gif
     alt: "placeholder image 6"
+  - url: /courses/CG2017/HW1
+    image_path: /assets/courses/CG2017/HW1.gif
+    alt: "placeholder image 7"
+  - url: /courses/CG2017/HW2
+    image_path: /assets/courses/CG2017/HW2.gif
+    alt: "placeholder image 8"
+  - url: /courses/CG2017/HW3
+    image_path: /assets/courses/CG2017/HW3.gif
+    alt: "placeholder image 9"
+  - url: /courses/CG2017/HW4
+    image_path: /assets/courses/CG2017/HW4.gif
+    alt: "placeholder image 10"
 author_profile: true
 ---
 
