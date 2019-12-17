@@ -1,0 +1,31 @@
+I"�<p>This is the final projects in the rendering course.  <br />
+I created simple functions of 3D Software, the functions include:<br /></p>
+<ol>
+  <li>read obj files or create simple objects</li>
+  <li>translate, rotate, scaling these objects separately</li>
+  <li>read Img files as texture for each obj files or use color only.</li>
+  <li>All functions above will be done by users through a simple GUI</li>
+  <li>Do above functions directly on the screne</li>
+</ol>
+
+<h1 id="try-it-yourself">Try it yourself</h1>
+
+<ol>
+  <li>Click <a href="/assets/projects/Simple_3D_Software.zip">here</a> to download the file directly</li>
+  <li>Open cmd and move to the folder “build”<br /></li>
+  <li>Start “app.exe” file in folder “bin” <br />
+<br />
+For example:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\Users\genius92606\Desktop\CGHW2\build
+start bin/app.exe
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="pdf">PDF</h1>
+
+<iframe src="https://docs.google.com/viewer?srcid=1P3jZFhNPbDm6T_1q6nGsweoH3lmJH2_p&amp;pid=explorer&amp;efh=false&amp;a=v&amp;chrome=false&amp;embedded=true" style="width:100%; height:500px;" frameborder="0" allowfullscreen=""></iframe>
+
+<h1 id="demo-video">Demo video</h1>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/wzsEwaMZtxY?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+:ET

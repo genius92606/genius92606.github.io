@@ -35,3 +35,6 @@ PDF
 
 <iframe src="https://docs.google.com/viewer?srcid=1P3jZFhNPbDm6T_1q6nGsweoH3lmJH2_p&pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:500px;" frameborder="0" allowfullscreen></iframe>
 
+Demo video
+===
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/wzsEwaMZtxY?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>

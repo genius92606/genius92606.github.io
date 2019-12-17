@@ -1,0 +1,343 @@
+I"_<p><b style=" font-size: 50px;">Freshman</b></p>
+
+<div class="feature__wrapper">
+
+  
+
+</div>
+
+<p><b style=" font-size: 50px;">Sophomore</b></p>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://trungtq.com/wp-content/uploads/2018/12/object-oriented-programming-oop.png" alt="placeholder image 1" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://trungtq.com/2018/12/15/object-oriented-analysis-and-design/">TRUNGTQ.COM</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Object Oriented Programming</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>C++ Primer Plus 6</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/OOP/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<p><b style=" font-size: 50px;">Junior</b></p>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://volersystems.com/wp-content/uploads/2016/10/Voler-Robot-embeddedsystems.png" alt="placeholder image 1" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://volersystems.com/product-design/embedded-systems/">volersystems</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Embedded System</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Arduino~</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/embedded%20system/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://i.udemycdn.com/course/750x422/1613828_fd1d_3.jpg" alt="placeholder image 1" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://www.udemy.com/course/coding-java-interview-algorithms-data-structure/">Udemy</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Data Structure</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>C-Ubuntu</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/data_structure/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://lh3.googleusercontent.com/F4K9GDvaQV_tnZY6DHUKEpsp3u7K3ZBvjXNDhhvWhc-akUJessnJC_fzLGV4Nq2e6dU" alt="" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://play.google.com/store/apps/details?id=com.faadooengineers.free_computergraphics&amp;hl=zh">Engineering Apps</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Computer graphics</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Old version</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/CG2017/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<p><b style=" font-size: 50px;">Senior</b></p>
+
+<!--
+
+
+<div class="feature__wrapper">
+
+  
+
+</div>
+-->
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="http://web.svgncti.org/wp-content/uploads/2017/10/course-product-image.Web-Programmingpng-600x360.png" alt="placeholder image 1" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="http://web.svgncti.org/product/web-programming/">NCTI</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Web Programming</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>A hard course about web programming</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/wp2018/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/courses/rendering/rendering.jpg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Rendering</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Rendering class</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/rendering/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/courses/rendering/computer-graphic.jpg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Computer graphics</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Application</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/CG2019/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://www.automotivetestingtechnologyinternational.com/wp-content/uploads/2018/08/5.-Computational-Fluid-Dynamics-CFD-Streamline-model-simulation-I.D.-R-Pikes-Peak.jpg" alt="" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://www.automotivetestingtechnologyinternational.com/">automotivetestingtechnologyinternational</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Computer aided engineering</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>MATLAB</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/CAE/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="https://faceit.ir/images/Marie_Behzadi/beh-asli.jpg" alt="" />
+            
+              <span class="archive__item-caption">Image courtesy of <a href="https://faceit.ir/news/5610/Which-Operating-System-Should-You-Choose-For-Your-Next-PC">FaceIt</a>
+</span>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Operating System</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>C++</p>
+
+            </div>
+          
+
+          
+            <p><a href="/courses/OS/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+:ET

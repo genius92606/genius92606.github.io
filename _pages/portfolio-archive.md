@@ -57,6 +57,9 @@ gallery1:
   - url: /courses/CG2017/HW4
     image_path: /assets/courses/CG2017/HW4.gif
     alt: "placeholder image 10"
+  - url: /projects/gomoku
+    image_path: /assets/projects/gomoku.PNG
+    alt: "placeholder image 11"
 author_profile: true
 ---
 
