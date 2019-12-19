@@ -1,0 +1,32 @@
+I"�<h1 id="programming-problems-3152016">Programming problems 3/15/2016</h1>
+<p>2016/3/1</p>
+
+<h1 id="in-class-problems">In class problems</h1>
+<ol>
+  <li>Ask the user to enter a certain year (A D)D). Determine whether it is a leap year.<br />
+Display the result.</li>
+  <li>Ask the user to enter an integer ranging between 2 and 1000. <br />Determine whether it is a prime number. Display the result.</li>
+  <li>Ask the u ser to enter coeffi cients of a quadratic equation as in ax 2 +bx+c=0.<br />Calculate its roots and display the results.</li>
+</ol>
+
+<h1 id="homework-problems">Homework problems</h1>
+
+<ol>
+  <li>Ask the user to enter an integer, rang ing between 100 and 999. Determine whether this n umber is a daffodil number. A daffodil number follows: ABC =A 3 +B 3 +C 3 s uch as 153 = 1 3 +5 3 +3 3 . Other daffodil numbers include 370, 371, 407.</li>
+  <li>A sk a use r to enter two complex numbers x and y. Calculate and display x+y, x y, x*y and x/y.
+<img src="/assets/courses/C/p3s1.png" alt="Sample" /> <br />
+NOTE:
+若使用 Visual Studio 2013 ，請參考下列網頁進行設定，避免scanf造成error
+<a href="http://danny50610.blogspot.tw/2014/11/visual-studio-community-2013-scanf.html">http://danny50610.blogspot.tw/2014/11/visual-studio-community-2013-scanf.html</a></li>
+  <li>Test yourself: 在完全不參考任何資料筆記、 課本下，寫出一個 C 程式，要
+求使用者輸入三個整數 x, y, z 的值，計算並在螢幕印出下列函數值<br />
+f(x,y,z)=100𝑥+10𝑦+𝑧</li>
+  <li>Read 參考資料 : <br />
+<a href="http://bbs.e-teaching.tw/bbs/upload/attachment.php?aid=179&amp;k=f456c88fe63ff0076c4050cbc37f3862&amp;t=1425353129">http://bbs.e-teaching.tw/bbs/upload/attachment.php?aid=179&amp;k=f456c88fe63ff0076c4050cbc37f3862&amp;t=1425353129</a></li>
+</ol>
+
+<h1 id="download-link">Download link</h1>
+
+<p><a href="/assets/courses/C/Practice1.rar">Source data</a> <br /></p>
+
+:ET

@@ -7,7 +7,14 @@ header:
   image: /assets/images/study.jpg
 excerpt: "The courses I studied in NCKU"
 feature_row:
-
+  - image_path: https://media.geeksforgeeks.org/wp-content/cdn-uploads/Clanguage-1024x341.png
+    image_caption: "Image courtesy of [GeeksforGeeks](https://www.geeksforgeeks.org/c-programming-language/)"
+    alt: "placeholder image 1"
+    title: "Programming Language"
+    excerpt: "First time contact programming language using C"
+    url: "courses/programming-language/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 feature_row2:
   - image_path: https://trungtq.com/wp-content/uploads/2018/12/object-oriented-programming-oop.png
     image_caption: "Image courtesy of [TRUNGTQ.COM](https://trungtq.com/2018/12/15/object-oriented-analysis-and-design/)"
@@ -88,7 +95,7 @@ feature_row4:
 
 
 
-{% include feature_row id="feature_row2" type="center" %}
+{% include feature_row id="feature_row2" %}
 
 
 <b style=" font-size: 50px;">Junior</b>
