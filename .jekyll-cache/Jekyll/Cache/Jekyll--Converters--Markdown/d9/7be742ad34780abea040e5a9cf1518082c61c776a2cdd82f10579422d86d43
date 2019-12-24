@@ -1,0 +1,211 @@
+I"Ù
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item--left">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>blender</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<figure class="half full">
+  
+    
+      <a href="https://twitter.com/genius92606/status/1122144577752899584">
+        <img src="https://pbs.twimg.com/media/D5KoexcU8AEtueG?format=jpg&amp;name=large" alt="placeholder image 1" />
+      </a>
+    
+  
+    
+      <a href="https://imgur.com/5WUmqGi">
+        <img src="/assets/images/sky.png" alt="placeholder image 2" />
+      </a>
+    
+  
+    
+      <a href="https://www.youtube.com/watch?v=F1Cdf87TSZ4">
+        <img src="/assets/images/chess.png" alt="placeholder image 3" />
+      </a>
+    
+  
+    
+      <a href="https://www.instagram.com/p/BWwnzAUALmH/?utm_source=ig_web_button_share_sheet">
+        <img src="/assets/images/dreamfall.gif" alt="placeholder image 4" />
+      </a>
+    
+  
+    
+      <a href="https://imgur.com/TgDYck2">
+        <img src="https://i.imgur.com/TgDYck2.jpg" alt="Placeholder image 5" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/help.jpg">
+        <img src="/assets/images/help.jpg" alt="Placeholder image 6" />
+      </a>
+    
+  
+  
+</figure>
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&amp;url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fbuild.stl" style="border:0;margin:0;width:50%;height:250px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&amp;url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fbuild.stl" style="border:0;margin:0;width:50%;height:250px;"></iframe>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item--left">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>OpenGL</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<figure class="third full">
+  
+    
+      <a href="/courses/CG2019/HW1">
+        <img src="/assets/courses/CG2019/CG2019-hw1.gif" alt="placeholder image 1" />
+      </a>
+    
+  
+    
+      <a href="/courses/CG2019/HW2">
+        <img src="/assets/courses/CG2019/HW2.PNG" alt="placeholder image 2" />
+      </a>
+    
+  
+    
+      <a href="/projects/path-tracing">
+        <img src="/assets/courses/CG2019/final.jpg" alt="placeholder image 3" />
+      </a>
+    
+  
+    
+      <a href="/courses/rendering/hw1">
+        <img src="/assets/courses/rendering/CG1.gif" alt="placeholder image 4" />
+      </a>
+    
+  
+    
+      <a href="/courses/rendering/hw3">
+        <img src="/assets/courses/rendering/HW3.gif" alt="placeholder image 5" />
+      </a>
+    
+  
+    
+      <a href="/projects/simple-3d-software">
+        <img src="/assets/projects/final.gif" alt="placeholder image 6" />
+      </a>
+    
+  
+    
+      <a href="/courses/CG2017/HW1">
+        <img src="/assets/courses/CG2017/HW1.gif" alt="placeholder image 7" />
+      </a>
+    
+  
+    
+      <a href="/courses/CG2017/HW2">
+        <img src="/assets/courses/CG2017/HW2.gif" alt="placeholder image 8" />
+      </a>
+    
+  
+    
+      <a href="/courses/CG2017/HW3">
+        <img src="/assets/courses/CG2017/HW3.gif" alt="placeholder image 9" />
+      </a>
+    
+  
+    
+      <a href="/courses/CG2017/HW4">
+        <img src="/assets/courses/CG2017/HW4.gif" alt="placeholder image 10" />
+      </a>
+    
+  
+    
+      <a href="/projects/gomoku">
+        <img src="/assets/projects/gomoku.PNG" alt="placeholder image 11" />
+      </a>
+    
+  
+  
+</figure>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item--left">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>OpenCV</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<figure class=" full">
+  
+    
+      <a href="/courses/rendering/hw2">
+        <img src="/assets/courses/rendering/morphing.PNG" alt="placeholder image 5" />
+      </a>
+    
+  
+  
+</figure>
+:ET

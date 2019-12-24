@@ -7,6 +7,8 @@ intro:
   - excerpt: 'blender'
 intro1:
   - excerpt: 'OpenGL'
+intro2:
+  - excerpt: 'OpenCV'
 gallery:
   - url: https://twitter.com/genius92606/status/1122144577752899584
     image_path: https://pbs.twimg.com/media/D5KoexcU8AEtueG?format=jpg&name=large   
@@ -14,15 +16,18 @@ gallery:
   - url: https://imgur.com/5WUmqGi
     image_path: /assets/images/sky.png
     alt: "placeholder image 2"
-  - url: https://vimeo.com/374829468?ref=tw-share
+  - url: https://www.youtube.com/watch?v=F1Cdf87TSZ4
     image_path: /assets/images/chess.png
     alt: "placeholder image 3"
-  - url: https://www.youtube.com/watch?v=F1Cdf87TSZ4
-    image_path: /assets/images/dreamfall.PNG
+  - url: https://www.instagram.com/p/BWwnzAUALmH/?utm_source=ig_web_button_share_sheet
+    image_path: /assets/images/dreamfall.gif
     alt: "placeholder image 4"
   - url: https://imgur.com/TgDYck2
     image_path: https://i.imgur.com/TgDYck2.jpg
     alt: "Placeholder image 5"
+  - url: /assets/images/help.jpg
+    image_path: /assets/images/help.jpg
+    alt: "Placeholder image 6"
 gallery1:
   - url: /courses/CG2019/HW1
     image_path: /assets/courses/CG2019/CG2019-hw1.gif
@@ -36,9 +41,6 @@ gallery1:
   - url: /courses/rendering/hw1
     image_path: /assets/courses/rendering/CG1.gif
     alt: "placeholder image 4"
-  - url: /courses/rendering/hw2
-    image_path: /assets/courses/rendering/morphing.PNG
-    alt: "placeholder image 5"
   - url: /courses/rendering/hw3
     image_path: /assets/courses/rendering/HW3.gif
     alt: "placeholder image 5"
@@ -60,6 +62,10 @@ gallery1:
   - url: /projects/gomoku
     image_path: /assets/projects/gomoku.PNG
     alt: "placeholder image 11"
+gallery2:
+  - url: /courses/rendering/hw2
+    image_path: /assets/courses/rendering/morphing.PNG
+    alt: "placeholder image 5"
 author_profile: true
 ---
 
@@ -73,3 +79,7 @@ author_profile: true
 {% include feature_row id="intro1" type="left" %}
 
 {% include gallery id="gallery1" class="full" %}
+
+{% include feature_row id="intro2" type="left" %}
+
+{% include gallery id="gallery2" class="full" %}
