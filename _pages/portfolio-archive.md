@@ -9,6 +9,8 @@ intro1:
   - excerpt: 'OpenGL'
 intro2:
   - excerpt: 'OpenCV'
+intro3:
+  - excerpt: 'Others'
 gallery:
   - url: https://twitter.com/genius92606/status/1122144577752899584
     image_path: https://pbs.twimg.com/media/D5KoexcU8AEtueG?format=jpg&name=large   
@@ -66,6 +68,22 @@ gallery2:
   - url: /courses/rendering/hw2
     image_path: /assets/courses/rendering/morphing.PNG
     alt: "placeholder image 5"
+gallery3:
+  - url: /projects/Cranial-bone-repair
+    image_path: /assets/projects/Road.PNG
+    alt: "placeholder image 1"
+  - url: /projects/veinnavi
+    image_path: /assets/projects/emedic.gif
+    alt: "placeholder image 2"
+  - url: /projects/SkyPrenatal
+    image_path: /assets/projects/prague4.png
+    alt: "placeholder image 3"
+  - url: /projects/Bamboo-rat-simulator
+    image_path: /assets/projects/sample.png
+    alt: "placeholder image 4"
+  - url: /projects/remote-car
+    image_path: /assets/projects/remote.jpg
+    alt: "placeholder image 4"
 author_profile: true
 ---
 
@@ -83,3 +101,7 @@ author_profile: true
 {% include feature_row id="intro2" type="left" %}
 
 {% include gallery id="gallery2" class="full" %}
+
+{% include feature_row id="intro3" type="left" %}
+
+{% include gallery id="gallery3" class="full" %}

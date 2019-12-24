@@ -45,12 +45,10 @@ Award
 ![](/assets/projects/Honorable-Mention.jpg)
 
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fhead.stl" style="border:0;margin:0;width:150px;height:150px;"></iframe>
-
-<img src="file:///C:/Users/genius92606/Desktop/kisspng-computer-icons-plus-and-minus-signs-symbol-plus-5adcda26731bc8.2402580415244232064715.png"  style="width:50px;height:50px;">
-
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fbuild.stl" style="border:0;margin:0;width:150px;height:150px;"></iframe>
-
-<img src="file:///C:/Users/genius92606/Desktop/58afde22829958a978a4a6b0.png"  style="width:50px;height:50px;">
-
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Ffinal.stl" style="border:0;margin:0;width:150px;height:150px;"></iframe>
+<p float="left">
+  <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fhead.stl" style="border:0;margin:0;width:225px;height:225px;"></iframe>  
+  +
+  <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fbuild.stl" style="border:0;margin:0;width:100px;height:100px;"></iframe>
+  =
+  <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Ffinal.stl" style="border:0;margin:0;width:225px;height:225px;"></iframe>
+</p>
