@@ -1,0 +1,70 @@
+I"�<p><b>Using modeling perspectives supplemented with 3D measurement for advanced cranium repair</b><br />
+We participated a <a href="https://www.ratc.com.tw/3dscan_contest_2018/">3D Scanning Application Competition 2018</a>, and got Honorable Mention.<br /></p>
+
+<h1 id="motivation">Motivation</h1>
+
+<ul>
+  <li>99% of maternal deaths happen in developing countries</li>
+  <li>830 women die from preventable causes related to pregnancy and childbirth every day</li>
+  <li>The key obstacle is pregnant women’s lack of access to quality skilled care before, during and after childbirth.</li>
+  <li>Telemedicine devices can be a solution to prenatal care in resource-scarce communities</li>
+</ul>
+
+<h1 id="goal">Goal</h1>
+<ul>
+  <li>Critical measurements of prenatal health care</li>
+  <li>Screening for high-risk conditions</li>
+  <li>Light-weight</li>
+  <li>Self-sustaining</li>
+  <li>Low-cost</li>
+  <li>Easy to operate</li>
+</ul>
+
+<h1 id="to-screen">To screen…</h1>
+<p><img src="/assets/projects/prague1.png" alt="" /></p>
+
+<h1 id="system">System</h1>
+<p><img src="/assets/projects/prague0.png" alt="" />
+<img src="/assets/projects/prague2.png" alt="" /></p>
+
+<h1 id="components">Components</h1>
+<p><img src="/assets/projects/prague3.png" alt="" /></p>
+
+<h1 id="user-side-interface">User side interface</h1>
+<p><img src="/assets/projects/prague5.png" alt="" /></p>
+
+<h1 id="physician-side-interface">Physician side interface</h1>
+<p><img src="/assets/projects/prague6.png" alt="" /></p>
+
+<h1 id="whole-device">Whole Device</h1>
+<p><img src="/assets/projects/prague4.png" alt="" /></p>
+
+<h1 id="user-manual">User Manual</h1>
+<iframe src="https://docs.google.com/viewer?srcid=1SQbfoJVCF2CsKeYf77-7qay1KjlnGP1n&amp;pid=explorer&amp;efh=false&amp;a=v&amp;chrome=false&amp;embedded=true" style="width:100%; height:900px;" frameborder="0" allowfullscreen=""></iframe>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li>Alkema, L., Chou, D., Hogan, D., Zhang, S., Moller, A., Gemmill, A., . . . Say, L. (2016). Global, Regional, and National Levels and Trends in Maternal Mortality Between 1990 and 2015, With Scenario-based Projections to 2030. Obstetric Anesthesia Digest,36(4), 191. doi:10.1097/01.aoa.0000504718.91214.7d</li>
+  <li>Conde-Agudelo, A., Belizán, J. M., &amp; Lammers, C. (2005). Maternal-perinatal morbidity and mortality associated with adolescent pregnancy in Latin America: Cross-sectional study. American Journal of Obstetrics and Gynecology,192(2), 342-349. doi:10.1016/j.ajog.2004.10.593</li>
+  <li>Health - United Nations Sustainable Development. (n.d.). Retrieved from https://www.un.org/sustainabledevelopment/health/</li>
+  <li>L. (2018, March 01). Live-Charts/Live-Charts. Retrieved from https://github.com/Live-Charts/Live-Charts</li>
+  <li>Maternal and perinatal health. (2013, October 22). Retrieved from http://www.who.int/maternal_child_adolescent/topics/maternal/maternal_perinatal/en/</li>
+  <li>Portable Digital Blood Pressure Monitor. (n.d.). Retrieved from https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2005/ww56_ws62/Final Project Web/index.html</li>
+  <li>Say, L., Chou, D., Gemmill, A., Tunçalp, Ö, Moller, A., Daniels, J., . . . Alkema, L. (2014). Global causes of maternal death: A WHO systematic analysis. The Lancet Global Health,2(6). doi:10.1016/s2214-109x(14)70227-x</li>
+  <li>WHO recommendations on antenatal care for a positive pregnancy experience. (2016). Geneva: World Health Organization.</li>
+</ul>
+
+<h1 id="demo-video">Demo video</h1>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/afyF4xmKdqE?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+
+<h1 id="our-team">Our team</h1>
+<p><img src="/assets/projects/prague.jpg" alt="" /></p>
+
+<h1 id="award">Award</h1>
+<p><img src="/assets/projects/silver-award.jpg" alt="" /></p>
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&amp;url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fhead.stl" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&amp;url=https%3A%2F%2Fgenius92606.github.io%2Fassets%2Fprojects%2Fbuild.stl" style="border:0;margin:0;width:100%;height:500px;"></iframe>
+
+:ET
