@@ -2,8 +2,8 @@
 title : Project-Final
 permalink: courses/data_structure/final-project
 header:
-  image: /assets/courses/DS/final.PNG
-  teaser: /assets/courses/DS/final.PNG
+  image: https://img.buzzfeed.com/buzzfeed-static/static/2017-09/2/14/enhanced/buzzfeed-prod-fastlane-01/enhanced-14678-1504375611-3.png
+  teaser: https://img.buzzfeed.com/buzzfeed-static/static/2017-09/2/14/enhanced/buzzfeed-prod-fastlane-01/enhanced-14678-1504375611-3.png
 ---
 
 Problems
