@@ -13,7 +13,7 @@ categories:
 tags:
   - NCKU
   - Library
-last_modified_at: 2019-10-09T16:00:52-04:00
+last_modified_at: 2010-01-09T16:00:52-04:00
 ---
 
 申請校友借書證一點都不難～～只是價格小貴了一點ＸＤ
@@ -44,6 +44,8 @@ GRE and TOEFL test.
 然後有免費冷氣跟水，還可以看年輕的大學生認真的樣子~<br>
 通常應該是不太需要0.0
 
+## Here is my card~~
+![library card](/assets/images/alumni-library -card.JPG)
 ## 想知道更多
 * [圖書館網站](http://www.lib.ncku.edu.tw/service/card/alumni.php)
 
