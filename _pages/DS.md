@@ -1,7 +1,7 @@
 ---
 title: Data Structure
 layout: collection
-permalink: /courses/data_structure
+permalink: /courses/data_structure/
 collection: DS
 entries_layout: grid
 classes: wide

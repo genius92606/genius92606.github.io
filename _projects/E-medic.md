@@ -17,6 +17,7 @@ Motivation
 Features
 ===
 ![](/assets/projects/emedic2.png)
+
 Goal
 ===
 ![](/assets/projects/emedic3.png)
