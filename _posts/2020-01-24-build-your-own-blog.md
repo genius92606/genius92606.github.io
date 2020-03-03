@@ -33,7 +33,7 @@ Minimal Mistakes is flexible two-column Jekyll theme, perfect for building perso
 
 I fork [this repository](https://github.com/mmistakes/minimal-mistakes) directly. Then revised some data and folder to make my customize website. It is really easy for beginners to start up.
 
-Following the steps in [Part 2](https://genius92606.github.io/posts/2020-01-24-build-your-own-blog-2), you can build your own website immediately!
+Following the steps in [Part 2](https://genius92606.github.io/posts/2020-01-24-build-your-own-blog-2), you can build your own website immediately!!
 
 
 Reference
