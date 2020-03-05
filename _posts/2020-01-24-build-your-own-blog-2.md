@@ -53,6 +53,7 @@ open **CMD**
 
 ```
 cd Desktop/yourFolder
+bundle install
 bundle exec jekyll serve
 ```
 Then, open your browser and go to http://localhost:4000
