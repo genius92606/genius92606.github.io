@@ -3,6 +3,7 @@ permalink: /about-me/
 title: "About me"
 
 layout: archive
+classes: wide
 author_profile: true
 last_modified_at: 2019-08-27T15:46:43-04:00
 toc: true
@@ -13,11 +14,12 @@ toc: true
 </figure> 
 
 <br>
-I just graduate from National Cheng Kung University(NCKU).
-I used to major in Biomedical Engineering(BME) but I want to transfer my major to Computer Science, 
-and I am especially interested in Computer Graphics.
+Hi, my name is Meng-Chen Lee, you can also call me Martin.<br>
+I am currently a Ph.D. Computer Science student from University of Houston.<br>
+I graduated from National Cheng Kung University(NCKU) in 2019.
 
-<br><br><br>
+
+<br>
 I love technology and something new <br>
 I believe that people should be curious, passionate, <br>
 and explore the unknown to make our life meaningful.
