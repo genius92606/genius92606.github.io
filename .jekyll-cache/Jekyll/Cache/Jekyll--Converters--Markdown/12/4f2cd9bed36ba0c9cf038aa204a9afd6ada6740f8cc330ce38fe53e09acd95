@@ -1,4 +1,4 @@
-I"�<p>This is the final projects in the rendering course.  <br />
+I"�<p>This is the final projects in the rendering course.  <br />
 I created simple functions of 3D Software, the functions include:<br /></p>
 <ol>
   <li>read obj files or create simple objects</li>
@@ -16,7 +16,7 @@ I created simple functions of 3D Software, the functions include:<br /></p>
   <li>Start “app.exe” file in folder “bin” <br />
 <br />
 For example:
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\Users\genius92606\Desktop\CGHW2\build
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\Users\genius92606\Desktop\CGHW2\build
 start bin/app.exe
 </code></pre></div>    </div>
   </li>
