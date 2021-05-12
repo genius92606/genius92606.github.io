@@ -2,8 +2,8 @@
 title : Path Tracing
 permalink: projects/path-tracing
 header:
-  image: /assets/courses/CG2019/final.jpg
-  teaser: /assets/courses/CG2019/final.jpg
+  image: /assets/projects/CG2019_final.jpg
+  teaser: /assets/projects/CG2019_final.jpg
 
 
 ---

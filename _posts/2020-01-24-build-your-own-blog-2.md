@@ -60,7 +60,7 @@ Then, open your browser and go to http://localhost:4000
 
 You can also type this
 ```
-bundle exec jekyll serve --post 4001
+bundle exec jekyll serve --port 4001
 ```
 for multiple website, **4001** can be other number.<br>
 Some numbers are not allowed, you can try it by yourself~
