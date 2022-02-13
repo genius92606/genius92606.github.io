@@ -136,6 +136,10 @@ author:
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UC9UxS_sopIll3xkbgaYD0IQ?"
+    - label: "Resume"
+      icon: "fa-solid fa-file-invoice"
+      url: "https://viewscreen.githubusercontent.com/view/pdf?browser=safari&color_mode=auto&commit=b174929d852c9d789a244c7ee588b2c30366f543&device=unknown_device&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67656e69757339323630362f67656e69757339323630362e6769746875622e696f2f623137343932396438353263396437383961323434633765653538386232633330333636663534332f6173736574732f43562e706466&logged_in=true&nwo=genius92606%2Fgenius92606.github.io&path=assets%2FCV.pdf&platform=mac&repository_id=90148123&repository_type=Repository&version=15#ece859d7-09ad-42eb-9f7a-cb6487f46346"
+      
 
 
 # Site Footer
