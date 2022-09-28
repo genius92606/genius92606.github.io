@@ -114,7 +114,13 @@ analytics:
 author:
   name             : "Meng-Chen Lee"
   avatar           : "/assets/images/profile_pic.jpg"
-  bio              : "Hi, you can also call me Martin. I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. I am current a Ph.D. Computer Science student in Unviersity of Houston. I'm working Dr. Zhigang Deng in Computer Graphics and Interactive Media Lab."
+  bio              : "Hi, you can also call me Martin. 
+  I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. 
+  I am currently a Ph.D. Computer Science student in Unviersity 
+  of Houston and working with Dr. Zhigang Deng in Computer 
+  Graphics and Interactive Media Lab. 
+  My main research focus on multiparty conversation
+   animation and simulation"
   location         : "Houston, Texas"
   email            : "martin33156@gmail.com"
   links:

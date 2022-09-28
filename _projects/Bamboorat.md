@@ -25,7 +25,7 @@ Goal
 Try it yourself
 ===
 
-<iframe src="http://luffy.ee.ncku.edu.tw:11935/" style="width:420px; height:715px;" frameborder="0"></iframe>
+<iframe src="https://e24054075.github.io/Bamboo-rat-simulator-game/" style="width:420px; height:715px;" frameborder="0"></iframe>
 
 The game above may not be working <br>
 Therefore, I suggest click [here](http://luffy.ee.ncku.edu.tw:11935/) to go to the website directly. 
