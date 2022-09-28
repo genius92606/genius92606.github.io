@@ -15,8 +15,7 @@ toc: true
 
 <br>
 Hi, my name is Meng-Chen Lee, you can also call me Martin.<br>
-I got my bachelor degree in National Cheng Kung University(NCKU) in 2019. <br>
-I am currently a Ph.D. Computer Science student from University of Houston.<br>
+I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. I am current a Ph.D. Computer Science student in Unviersity of Houston. I'm working Dr. Zhigang Deng in Computer Graphics and Interactive Media Lab.
 
 
 

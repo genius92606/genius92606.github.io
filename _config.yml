@@ -112,9 +112,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Martin Dreamfall"
+  name             : "Meng-Chen Lee"
   avatar           : "/assets/images/profile_pic.jpg"
-  bio              : "Hello my name is Martin, Dreamfall is my name in Chinese"
+  bio              : "Hi, you can also call me Martin. I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. I am current a Ph.D. Computer Science student in Unviersity of Houston. I'm working Dr. Zhigang Deng in Computer Graphics and Interactive Media Lab."
   location         : "Houston, Texas"
   email            : "martin33156@gmail.com"
   links:
