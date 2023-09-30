@@ -3,13 +3,13 @@ title: "Portfolio"
 layout: archive
 permalink: /portfolio/
 excerpt: "My portfolio"
+intro3:
+  - excerpt: 'Projects'
 intro: 
   - excerpt: 'blender'
 intro1:
   - excerpt: 'OpenGL'
 
-intro3:
-  - excerpt: 'Others'
 gallery:
   - url: https://twitter.com/genius92606/status/1122144577752899584
     image_path: https://pbs.twimg.com/media/D5KoexcU8AEtueG?format=jpg&name=large   
