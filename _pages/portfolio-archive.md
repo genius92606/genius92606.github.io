@@ -59,6 +59,11 @@ gallery3:
 author_profile: true
 ---
 
+{% include feature_row id="intro3" type="left" %}
+
+{% include gallery id="gallery3" class="full" %}
+
+
 {% include feature_row id="intro" type="left" %}
 
 
@@ -72,6 +77,4 @@ author_profile: true
 
 
 
-{% include feature_row id="intro3" type="left" %}
 
-{% include gallery id="gallery3" class="full" %}
