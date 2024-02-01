@@ -13,7 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -114,49 +114,46 @@ analytics:
 author:
   name             : "Meng-Chen Lee"
   avatar           : "/assets/images/profile_pic.jpg"
-  bio              : "Hi, you can also call me Martin. 
-  I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. 
-  I am currently a Ph.D. Computer Science student in Unviersity 
+  bio              : "Hi, you can also call me Martin. I am currently a Ph.D. Computer Science student in Unviersity 
   of Houston and working with Dr. Zhigang Deng in Computer 
-  Graphics and Interactive Media Lab. 
-  My main research focus on multiparty conversation
-   animation and simulation"
+  Graphics and Interactive Media Lab. My main research focus on multiparty conversation
+   animation and simulation. Before that, I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. "
   location         : "Houston, Texas"
   email            : "martin33156@gmail.com"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/genius92606"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/profile.php?id=100000413662587"
+ #   - label: "Twitter"
+ #     icon: "fab fa-fw fa-twitter-square"
+ #     url: "https://twitter.com/genius92606"
+ #   - label: "Facebook"
+ #     icon: "fab fa-fw fa-facebook-square"
+ #     url: "https://facebook.com/profile.php?id=100000413662587"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/genius92606"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/dream_fall92606/"
+ #   - label: "Instagram"
+ #     icon: "fab fa-fw fa-instagram"
+ #     url: "https://instagram.com/dream_fall92606/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/martin-lee-b02b08135/"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UC9UxS_sopIll3xkbgaYD0IQ?"
-    - label: "Resume"
+ #   - label: "Youtube"
+ #     icon: "fab fa-fw fa-youtube"
+ #     url: "https://www.youtube.com/channel/UC9UxS_sopIll3xkbgaYD0IQ?"
+    - label: "Document"
       icon: "fab fa-fw fa-file-user"
-      url: "https://github.com/genius92606/genius92606.github.io/raw/master/assets/CV.pdf"
+      url: "https://github.com/genius92606/genius92606.github.io/raw/master/assets/Resume.pdf"
       
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/genius92606"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/profile.php?id=100000413662587"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/genius92606"
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      url: "https://facebook.com/profile.php?id=100000413662587"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/genius92606"
@@ -166,9 +163,9 @@ footer:
     #- label: "Bitbucket"
      # icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/dream_fall92606/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/dream_fall92606/"
 
 
 # Reading Files
