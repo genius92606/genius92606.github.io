@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dreamfall"
+title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Meng-Chen Lee"
+name                     : "Meng-Chen Lee (Martin)"
 description              : "Welcome to my blog"
 url                      : "https://genius92606.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -114,10 +114,7 @@ analytics:
 author:
   name             : "Meng-Chen Lee"
   avatar           : "/assets/images/profile_pic.jpg"
-  bio              : "Hi, you can also call me Martin. I am currently a Ph.D. Computer Science student in Unviersity 
-  of Houston and working with Dr. Zhigang Deng in Computer 
-  Graphics and Interactive Media Lab. My main research focus on multiparty conversation
-   animation and simulation. Before that, I got my bachelor degree in Nation Cheng Kung University (NCKU) in 2019. "
+  bio              : "I am a Ph.D. candidate in Computer Science actively seeking an internship opportunity."
   location         : "Houston, Texas"
   email            : "martin33156@gmail.com"
   links:
