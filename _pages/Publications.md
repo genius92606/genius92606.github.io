@@ -5,7 +5,7 @@ layout: splash
 author_profile: true
 date: 2024-02-15T11:48:41-04:00
 feature_row:
-  - image_path: /assets/images/no-shpere.jpg
+  - image_path: assets/images/no-shpere.jpg
     image_caption: "Three-party conversation"
     alt: "placeholder image 1"
     title: "Multimodal Turn Prediction and Analysis for Multiparty Conversations"
@@ -17,5 +17,5 @@ feature_row:
 
 {% include feature_row %}
 
-3551 Cullen Boulevard Room 501. Houston, Texas. 77204.
 
+- Meng-Chen Lee, Mai Trinh, and Zhigang Deng (2019). *Multimodal Turn Prediction and Analysis for Multiparty Conversations* Proceeding of 25th ACM International Conference on Multimodal Interaction (ICMI) 2023. Paris, France, Oct 9-13, 2023. [DOI: 10.1145/3577190.3614139](https://dl.acm.org/doi/10.1145/3577190.3614139)
