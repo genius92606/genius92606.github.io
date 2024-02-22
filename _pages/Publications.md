@@ -4,7 +4,6 @@ permalink: /publications/
 layout: archive
 classes: wide
 author_profile: true
-last_modified_at: 2024-02-15T11:48:41-04:00
 
 intro: 
   - excerpt: 'In press'
