@@ -8,7 +8,7 @@ author_profile: true
 
 ## **Publications**
 
-- **[ICMI'23]** Multimodal Turn Prediction and Analysis for Multiparty Conversations
+- **[ICMI'23]** Multimodal Turn Prediction and Analysis for Multiparty Conversations [PDF](https://graphics.cs.uh.edu/wp-content/uploads/papers/2023/2023-ICMI-MultimodalTurnAnalysis.pdf){: .btn} 
   + Meng-Chen Lee, Mai Trinh, and Zhigang Deng 
   + Proceeding of 25th ACM International Conference on Multimodal Interaction (ICMI) 2023.
   + Paris, France, Oct 9-13, 2023. [DOI: 10.1145/3577190.3614139](https://dl.acm.org/doi/10.1145/3577190.3614139)
