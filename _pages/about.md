@@ -15,6 +15,6 @@ I am deeply passionate about technology and the pursuit of novelty. I firmly bel
 
 ## Personal information
 
-* [mail](mailto:martin33156@gmail.com)
+* [email](mailto:martin33156@gmail.com)
 * [github](https://github.com/genius92606)
 * [linkedin](https://www.linkedin.com/in/martin-lee-b02b08135/)
