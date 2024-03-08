@@ -16,8 +16,10 @@ author_profile: true
 
 
 - Online Multimodal End-of-Turn Prediction for Three-party Conversations
-  + **Meng-Chen Lee** and Zhigang Deng
+<!--+ **Meng-Chen Lee** and Zhigang Deng-->
 
 
 - A Computational Study on Sentence-based Next Speaker Prediction in Multiparty Conversations
-  + **Meng-Chen Lee**, Wu Angela Li, and Zhigang Deng
+<!--+ **Meng-Chen Lee**, Wu Angela Li, and Zhigang Deng-->
+
+- LatentDiffuseCLIP-VQMotion: A Novel Framework for Generating Realistic Two-Person Conversations with Enhanced Motion Fidelity
