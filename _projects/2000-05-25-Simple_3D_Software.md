@@ -9,31 +9,83 @@ header:
 ---
 
 
-This is the final projects in the rendering course.  <br>
-I created simple functions of 3D Software, the functions include:<br>
-1. read obj files or create simple objects
-2. translate, rotate, scaling these objects separately
-3. read Img files as texture for each obj files or use color only.
-4. All functions above will be done by users through a simple GUI
-5. Do above functions directly on the screne
+This is the final projects in the rendering course. 
+ 
+### Code:
+[Simple 3D Software](https://github.com/genius92606/simple-3D-software)
 
-Try it yourself
+Operating System
 ===
+Windows 10, visual studio 15 2017 Win64
 
-1. Click [here](/assets/projects/Simple_3D_Software.zip) to download the file directly
-2. Open cmd and move to the folder "build"<br>
-3. Start "app.exe" file in folder "bin" <br>
-<br>
-For example:
+Instructions
+====
+
+#### Requirement
+1. cmake 
+[install here](https://cmake.org/download/)
+2. conan - package manager (windows)
+[install here](https://conan.io/)
+
+Open command prompt
+```bash
+set PATH="C:\Program File\CMake\bin\";%PATH%
 ```
-cd C:\Users\genius92606\Desktop\CGHW2\build
-start bin/app.exe
+Clone the repository
+```bash
+git clone https://github.com/genius92606/simple-3D-software.git
+```
+Create "build" folder in the repository
+```bash
+cd simple-3D-software
+mkdir build && cd build
+
+conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
+conan install .. --build glad -sbuild_type=Debug
+```
+```bash
+cd build
+cmake .. -G "Visual Studio 15 2017 Win64"
 ```
 
-PDF
-===
+#### Build
+```bash
+cd build
+cmake --build .
+```
 
-<iframe src="https://docs.google.com/viewer?srcid=1P3jZFhNPbDm6T_1q6nGsweoH3lmJH2_p&pid=explorer&efh=false&a=v&chrome=false&embedded=true" style="width:100%; height:500px;" frameborder="0" allowfullscreen></iframe>
+#### Execution
+```bash
+cd build
+start bin\app.exe
+```
+
+Application Instruction
+==
+
+1. Execute the application
+```bash
+cd build
+start bin\app.exe
+```
+2. Click the drop down menu at the left, and click "add" to add a built-in object or click "Load obj" to read objects.
+![](https://i.imgur.com/IhAxQ4V.png)
+3. If choosing "Load obj", it will pop up a file directory and the user can choose files from the bottom right.
+![](https://i.imgur.com/qK1QTp2.png)
+4. After adding new objects, the windows will add an extra section like below, the user can change color, translate, rotation, scale of the object. Other than built-in color, we also provide the user to load customize textures by clicking "Load Texture"
+![](https://i.imgur.com/YrwHcA6.png)
+5. Holding scrolling wheel and moving to change perspective.
+6. Scroll the wheel to zoom.
+7. This application includes abmient, diffuse, and specular lighting.
+
+
+
+Thirdparty
+==
+1. GLFW3
+2. ImGui
+
+
 
 Demo video
 ===

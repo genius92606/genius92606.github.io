@@ -7,6 +7,10 @@ header:
 
 Make eye gaze data useable. Basically it determines the outliers and anomolies, then fill up the gap using cubic-spline interpolation.
 
+
+### Code: 
+[Eye Gaze Processing](https://github.com/genius92606/Eye_gaze_processing)
+
 # Requirement
 Latest matlab
 
