@@ -20,6 +20,10 @@ author_profile: true
   + **Meng-Chen Lee**, Mai Trinh, and Zhigang Deng 
   + Proceeding of 25th ACM International Conference on Multimodal Interaction (ICMI) 2023, Paris, France, Oct 9-13, 2023, pp. 436 - 444. [DOI: 10.1145/3577190.3614139](https://dl.acm.org/doi/10.1145/3577190.3614139)
 
+## **Professional Service**
+
+Reviewer, IEEE Transactions on Visualization and Computer Graphics
+
 ## **Working**
 
 - LatentDiffuseCLIP-VQMotion: A Novel Framework for Generating Realistic Two-Person Conversations with Enhanced Motion Fidelity
