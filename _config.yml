@@ -320,7 +320,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: projects
+      type: publications
     values:
       layout: single
       author_profile: true
