@@ -27,3 +27,9 @@ Reviewer, IEEE Transactions on Visualization and Computer Graphics
 ## **Working**
 
 - LatentDiffuseCLIP-VQMotion: A Novel Framework for Generating Realistic Two-Person Conversations with Enhanced Motion Fidelity
+
+## Awards
+
+- [Spring 2024 UH CS Ph.D. Research Showcase Judge's Choice Best Poster](https://uh.edu/nsm/computer-science/events/phd-showcase/)
+- [Fall 2024 UH CS Ph.D. Research Showcase Judge's Choice Best Poster](https://uh.edu/nsm/computer-science/events/phd-showcase/)
+- [Fall 2024 UH CS Ph.D. Research Showcase People's Choice Best Poster](https://uh.edu/nsm/computer-science/events/phd-showcase/)
