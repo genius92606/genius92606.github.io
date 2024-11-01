@@ -22,7 +22,7 @@ author_profile: true
 
 ## **Professional Service**
 
-Reviewer, IEEE Transactions on Visualization and Computer Graphics
+Reviewer, IEEE Transactions on Visualization and Computer Graphics (TVCG) 
 
 ## **Working**
 
