@@ -20,7 +20,7 @@ locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Meng-Chen Lee (Martin)"
+name                     : "Meng-Chen (Martin) Lee"
 description              : "Welcome to my blog"
 url                      : "https://genius92606.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -112,7 +112,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Meng-Chen Lee"
+  name             : "Meng-Chen (Martin) Lee"
   avatar           : "/assets/images/profile_pic.jpg"
   bio              : "I am a Ph.D. candidate in Computer Science, deeply passionate about computer graphics, specializing in multiparty conversation analysis, animation, and simulation. My expertise spans deep learning, large language models (LLMs), multimodal systems, and motion generation. I am actively exploring internship opportunities where I can apply my research skills in dynamic and collaborative settings."
   location         : "Houston, Texas"
