@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 ## **Publications**
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/threeTurns.pdf){: .align-left} 
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/threeTurns.png){: .align-left} 
 - **[ICMI'24]** Online Multimodal End-of-Turn Prediction for Three-party Conversations [PDF](https://graphics.cs.uh.edu/wp-content/papers/2024/2024-ICMI-OnlineTurnPrediction.pdf){: .btn} <br>
 **Best Paper Runner Up**  <span style="color:purple">| AWARD ICMI 2024</span> <br>
     <img src="/assets/images/ICMI_Certificate.jpeg" alt="Certificate" width="400"/>
